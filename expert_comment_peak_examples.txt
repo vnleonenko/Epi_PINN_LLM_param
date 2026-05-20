@@ -1,0 +1,168 @@
+# Expert Comments for SIRD Model Optimization
+
+===========================================
+# PEAK POSITION ONLY (Direction only)
+===========================================
+
+## Earlier peak:
+- "Need earlier peak"
+- "Peak should be earlier"
+- "Move peak earlier"
+- "Shift peak forward"
+- "Peak is too late"
+
+## Later peak:
+- "Need later peak"
+- "Peak should be later"
+- "Move peak later"
+- "Shift peak backward"
+- "Peak is too early"
+
+===========================================
+# PEAK HEIGHT ONLY
+===========================================
+
+## Higher peak:
+- "Need higher peak"
+- "Peak should be higher"
+- "Increase peak height"
+- "Peak is too low"
+
+## Lower peak:
+- "Need lower peak"
+- "Peak should be lower"
+- "Decrease peak height"
+- "Peak is too high"
+
+===========================================
+# COMBINATIONS (Position + Height)
+===========================================
+
+## Earlier + Higher:
+- "Need earlier and higher peak"
+- "Peak should be earlier and higher"
+- "Move peak earlier and increase height"
+- "Earlier, higher"
+
+## Earlier + Lower:
+- "Need earlier but lower peak"
+- "Peak should be earlier and lower"
+- "Move peak earlier and reduce height"
+- "Earlier, lower"
+
+## Later + Higher:
+- "Need later and higher peak"
+- "Peak should be later and higher"
+- "Move peak later and increase height"
+- "Later, higher"
+
+## Later + Lower:
+- "Need later and lower peak"
+- "Peak should be later and lower"
+- "Move peak later and reduce height"
+- "Later, lower"
+
+===========================================
+# WITH PRIORITY (one primary, one secondary)
+===========================================
+
+- "Peak earlier (priority), height can vary"
+- "Peak later (priority), height less important"
+- "Lower peak (priority), timing flexible"
+- "Higher peak (priority), timing flexible"
+- "Earlier peak main goal, height secondary"
+- "Lower height main goal, timing secondary"
+
+===========================================
+# WITH SPECIFIC TARGET (days)
+===========================================
+
+- "Need earlier peak, around day 30"
+- "Need later peak, around day 60"
+- "Peak should be at day 30"
+- "Move peak to day 25-35 range"
+- "Target peak position: 30 days"
+
+===========================================
+# WITH HEIGHT TARGET
+===========================================
+
+- "Peak height should be around 5000"
+- "Need lower peak, target under 3000"
+- "Increase peak height to 15000"
+- "Peak height target: 10000-12000"
+
+===========================================
+# FULL COMBINATIONS (Position + Height + Target)
+===========================================
+
+- "Need earlier peak around day 30 and higher peak around 12000"
+- "Move peak to day 25-35 and reduce height to under 5000"
+- "Later peak (day 50-60) with lower height (under 3000)"
+- "Earlier peak (day 20-25) and higher peak (15000+)"
+
+===========================================
+# TESTING RECOMMENDATIONS
+===========================================
+
+# Start with these simple ones:
+# 1. "Need earlier peak"
+# 2. "Need later peak"
+# 3. "Need higher peak"
+# 4. "Need lower peak"
+
+# Then test combinations:
+# 5. "Need earlier and higher peak"
+# 6. "Need earlier but lower peak"
+# 7. "Need later and higher peak"
+# 8. "Need later and lower peak"
+
+# Finally test with specific targets:
+# 9. "Need earlier peak, around day 30"
+# 10. "Need later peak, around day 60"
+
+
+- Higher β → earlier and higher infection peak
+- Lower β → later and lower infection peak
+- Higher γ → earlier and lower peak (faster recovery)
+- Lower γ → later and higher peak (slower recovery)
+- Higher μ → lower peak, more deaths
+- Lower μ → higher peak, fewer deaths
+
+
+
+    - Interpret the expert's comment to understand how the epidemic curve SHOULD change
+
+
+
+
+
+
+**MAGNITUDE CONSTRAINT - TINY STEPS ONLY:**
+- Change parameters by MAXIMUM ±0.0005 from the current/baseline value
+- Example: if β = 0.0950, you can change to 0.0945-0.0955 only
+- This ensures very fine-grained optimization and prevents overshooting
+    
+**You cannot change any parameter by more than a range from its current value.**
+
+Current values:
+- β = {current_beta:.4f} (allowed range: {beta_min:.4f} to {beta_max:.4f})
+- γ = {current_gamma:.4f} (allowed range: {gamma_min:.4f} to {gamma_max:.4f})
+- μ = {current_mu:.5f} (allowed range: {mu_min:.5f} to {mu_max:.5f})
+
+**Your generated parameters MUST stay within these ranges.**
+
+
+**MAGNITUDE CONSTRAINT - TINY STEPS ONLY:**
+- Change parameters by MAXIMUM ±0.0005 from the current/baseline value
+- Example: if β = 0.0950, you can change to 0.0945-0.0955 only
+- This ensures very fine-grained optimization and prevents overshooting
+
+**You cannot change any parameter by more than a range from its current value.**
+
+Current values:
+- β = {current_beta:.4f} (allowed range: {beta_min:.4f} to {beta_max:.4f})
+- γ = {current_gamma:.4f} (allowed range: {gamma_min:.4f} to {gamma_max:.4f})
+- μ = {current_mu:.5f} (allowed range: {mu_min:.5f} to {mu_max:.5f})
+
+**Your generated parameters MUST stay within these ranges.**
