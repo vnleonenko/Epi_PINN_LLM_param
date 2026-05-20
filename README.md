@@ -47,33 +47,6 @@ Create a `.env` file for your LLM provider settings (if needed).
 python main_test.py
 ```
 
-### Run full pipeline
-```bash
-# Phase 1: calibrate on real/synthetic data
-python phase1_calibrate.py --data data/covid_spb.csv
-
-# Phase 2: adjust parameters via LLM agents (example request)
-python phase2_adjust.py --request "the peak should be higher"
-
-# Phase 3: forecast with fixed parameters
-python phase3_forecast.py
-```
-
-### Example
-```python
-from agents.parameter_generator import adjust_parameters
-from models.pinn_model import train_pinn_fixed
-
-# Initial parameters from Phase 1
-params = {'beta': 0.1219, 'gamma': 0.0990, 'mu': 0.0099}
-
-# Expert feedback
-new_params = adjust_parameters(params, "the peak should be lower")
-# -> {'beta': 0.1185, 'gamma': 0.0997, 'mu': 0.0098}
-
-# Final forecast
-forecast = train_pinn_fixed(new_params)
-```
 
 ## Pipeline Overview
 
@@ -82,22 +55,6 @@ forecast = train_pinn_fixed(new_params)
 **Phase 1** – Model calibration (SIRD or PINN) → initial β, γ, μ.  
 **Phase 2** – LLM agents parse expert comment → sensitivity analysis → adjusted parameters → synthetic SIRD data.  
 **Phase 3** – PINN retrained with fixed adjusted parameters → final forecast + confidence intervals (Monte Carlo Dropout).
-
-## Project Structure
-
-```
-EPI_PINN_LLM_PARAM/
-├── agents/              # LLM agents (Intent Parser, Parameter Generator, Critic)
-├── formats/             # Prompt templates and output schemas
-├── tools/               # Sensitivity analysis, SIRD simulation
-├── utils/               # Data loading, metrics, plotting
-├── config.py            # Configuration (model hyperparams, LLM settings)
-├── main_test.py         # Entry point for testing
-├── pipeline_graph.png   # Visual pipeline summary
-├── README.md            # This file
-├── .env                 # API keys (not committed)
-└── requirements.txt     # Dependencies
-```
 
 ## Results
 
