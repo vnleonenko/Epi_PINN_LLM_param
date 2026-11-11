@@ -1,0 +1,147 @@
+
+start 2026-11-10T02:30:45Z workers=4
+data /agent/repos/viruses_submission_refinement/src/Epi_PINN_LLM_param/Phase 1 (model calibration)/real_datasets/covid-19_Kouprianov.csv
+self-check SIRD_I: RSS rel 6.520e-08, ever abs 4.082e-10, peak day 196 (stored 196)
+self-check SIRD_4: RSS rel 5.729e-08, ever abs 1.657e-09, peak day 288 (stored 288)
+self-check SEIRD_I_0.5: RSS rel 6.579e-08, ever abs 2.345e-10, peak day 197 (stored 197)
+self-check SEIRD_4_0.5: RSS rel 4.994e-08, ever abs 1.838e-09, peak day 326 (stored 326)
+PINN means {"SIRD-PINN": {"beta": 0.03432549238204956, "gamma": 0.031708931922912596, "mu": 0.000964406132698059, "sigma": NaN}, "SEIR-D-PINN": {"beta": 0.02653706967830658, "gamma": 0.02477247416973114, "mu": 1.329183578491211e-06, "sigma": 0.05809659063816071}}
+jobs 22 starts 540
+progress 10/540 last SIRD_I_only start 7 rss 5.400745e+10 in 4.6s
+progress 20/540 last SIRD_four_compartments start 9 rss 1.729091e+12 in 3.6s
+progress 30/540 last SEIRD_I_only_e0_0 start 9 rss 4.943429e+11 in 7.2s
+progress 40/540 last SEIRD_I_only_e0_0 start 20 rss 2.064364e+10 in 4.6s
+progress 50/540 last SEIRD_I_only_e0_0.25 start 4 rss 4.715750e+11 in 5.0s
+progress 60/540 last SEIRD_I_only_e0_0.25 start 14 rss 2.248337e+10 in 4.6s
+progress 70/540 last SEIRD_I_only_e0_0.25 start 22 rss 2.248337e+10 in 7.4s
+progress 80/540 last SEIRD_I_only_e0_0.5 start 7 rss 4.521247e+11 in 7.5s
+progress 90/540 last SEIRD_I_only_e0_0.5 start 16 rss 2.452726e+10 in 8.5s
+progress 100/540 last SEIRD_I_only_e0_1 start 2 rss 4.203958e+11 in 5.1s
+progress 110/540 last SEIRD_I_only_e0_1 start 10 rss 2.902455e+10 in 10.3s
+progress 120/540 last SEIRD_I_only_e0_1 start 19 rss 2.902455e+10 in 7.0s
+progress 130/540 last SEIRD_I_only_e0_2 start 5 rss 3.758854e+11 in 9.1s
+progress 140/540 last SEIRD_I_only_e0_2 start 15 rss 3.894441e+10 in 6.6s
+progress 150/540 last SEIRD_I_only_e0_2 start 24 rss 3.894441e+10 in 6.4s
+progress 160/540 last SEIRD_I_only_e0_4 start 8 rss 6.037209e+10 in 8.0s
+progress 170/540 last SEIRD_I_only_e0_4 start 20 rss 6.037209e+10 in 4.8s
+progress 180/540 last SEIRD_I_only_e0_8 start 2 rss 1.058266e+11 in 9.5s
+progress 190/540 last SEIRD_I_only_e0_8 start 12 rss 1.058266e+11 in 7.7s
+progress 200/540 last SEIRD_I_only_e0_8 start 23 rss 1.058266e+11 in 6.1s
+progress 210/540 last SEIRD_I_only_e0_12 start 7 rss 1.542349e+11 in 9.4s
+progress 220/540 last SEIRD_I_only_e0_12 start 17 rss 1.542349e+11 in 8.1s
+progress 230/540 last SEIRD_I_only_e0_16 start 1 rss 2.066461e+11 in 7.2s
+progress 240/540 last SEIRD_I_only_e0_16 start 10 rss 2.066461e+11 in 9.5s
+progress 250/540 last SEIRD_I_only_e0_16 start 21 rss 2.066461e+11 in 7.8s
+progress 260/540 last SEIRD_I_only_e0_24 start 5 rss 3.265635e+11 in 7.5s
+progress 270/540 last SEIRD_I_only_e0_24 start 17 rss 3.265635e+11 in 5.9s
+progress 280/540 last SEIRD_four_compartments_e0_0 start 0 rss 1.806019e+12 in 4.9s
+progress 290/540 last SEIRD_four_compartments_e0_0 start 9 rss 1.806019e+12 in 13.3s
+progress 300/540 last SEIRD_four_compartments_e0_0 start 19 rss 1.806019e+12 in 7.9s
+progress 310/540 last SEIRD_four_compartments_e0_0.25 start 3 rss 1.812462e+12 in 12.2s
+progress 320/540 last SEIRD_four_compartments_e0_0.25 start 14 rss 1.812462e+12 in 7.8s
+progress 330/540 last SEIRD_four_compartments_e0_0.25 start 23 rss 1.812462e+12 in 7.5s
+progress 340/540 last SEIRD_four_compartments_e0_0.5 start 6 rss 1.810391e+12 in 9.7s
+progress 350/540 last SEIRD_four_compartments_e0_0.5 start 18 rss 1.810391e+12 in 7.3s
+progress 360/540 last SEIRD_four_compartments_e0_1 start 1 rss 1.798434e+12 in 8.8s
+progress 370/540 last SEIRD_four_compartments_e0_1 start 14 rss 1.798434e+12 in 7.1s
+progress 380/540 last SEIRD_four_compartments_e0_1 start 22 rss 1.798434e+12 in 8.9s
+progress 390/540 last SEIRD_four_compartments_e0_2 start 5 rss 1.793197e+12 in 9.5s
+progress 400/540 last SEIRD_four_compartments_e0_2 start 13 rss 1.793197e+12 in 11.9s
+progress 410/540 last SEIRD_four_compartments_e0_2 start 24 rss 1.793197e+12 in 9.2s
+progress 420/540 last SEIRD_four_compartments_e0_4 start 9 rss 1.826872e+12 in 7.2s
+progress 430/540 last SEIRD_four_compartments_e0_4 start 19 rss 1.826872e+12 in 8.0s
+progress 440/540 last SEIRD_four_compartments_e0_8 start 3 rss 2.035217e+12 in 6.0s
+progress 450/540 last SEIRD_four_compartments_e0_8 start 13 rss 2.035217e+12 in 7.1s
+progress 460/540 last SEIRD_four_compartments_e0_8 start 23 rss 2.035217e+12 in 6.6s
+progress 470/540 last SEIRD_four_compartments_e0_12 start 7 rss 2.610115e+12 in 5.3s
+progress 480/540 last SEIRD_four_compartments_e0_12 start 17 rss 2.610115e+12 in 6.5s
+progress 490/540 last SEIRD_four_compartments_e0_16 start 2 rss 3.379500e+12 in 4.9s
+progress 500/540 last SEIRD_four_compartments_e0_16 start 11 rss 3.379500e+12 in 6.0s
+progress 510/540 last SEIRD_four_compartments_e0_16 start 21 rss 3.379500e+12 in 5.7s
+progress 520/540 last SEIRD_four_compartments_e0_24 start 6 rss 5.244036e+12 in 4.5s
+progress 530/540 last SEIRD_four_compartments_e0_24 start 15 rss 5.244036e+12 in 5.2s
+progress 540/540 last SEIRD_four_compartments_e0_24 start 25 rss 5.244036e+12 in 5.2s
+kept SIRD_I_only: RSS 5.400745e+10 latent nan bound - starts_within_1 10/10
+kept SIRD_four_compartments: RSS 1.729091e+12 latent nan bound - starts_within_1 10/10
+kept SEIRD_I_only_e0_0: RSS 2.064364e+10 latent 13.999999999999998 bound upper_14d starts_within_1 14/26
+kept SEIRD_I_only_e0_0.25: RSS 2.248337e+10 latent 13.999999999999998 bound upper_14d starts_within_1 15/26
+kept SEIRD_I_only_e0_0.5: RSS 2.452726e+10 latent 13.999999999999998 bound upper_14d starts_within_1 16/26
+kept SEIRD_I_only_e0_1: RSS 2.902455e+10 latent 13.999999999999998 bound upper_14d starts_within_1 16/26
+kept SEIRD_I_only_e0_2: RSS 3.894441e+10 latent 13.999999999999998 bound upper_14d starts_within_1 20/26
+kept SEIRD_I_only_e0_4: RSS 6.037209e+10 latent 13.999999999999998 bound upper_14d starts_within_1 20/26
+kept SEIRD_I_only_e0_8: RSS 1.058266e+11 latent 13.999999999999998 bound upper_14d starts_within_1 26/26
+kept SEIRD_I_only_e0_12: RSS 1.542349e+11 latent 13.999999999999998 bound upper_14d starts_within_1 26/26
+kept SEIRD_I_only_e0_16: RSS 2.066461e+11 latent 13.999999999999998 bound upper_14d starts_within_1 26/26
+kept SEIRD_I_only_e0_24: RSS 3.265635e+11 latent 13.999999999999998 bound upper_14d starts_within_1 26/26
+kept SEIRD_four_compartments_e0_0: RSS 1.806019e+12 latent 2.0000000000000004 bound lower_2d starts_within_1 26/26
+kept SEIRD_four_compartments_e0_0.25: RSS 1.812462e+12 latent 2.0000000000000004 bound lower_2d starts_within_1 26/26
+kept SEIRD_four_compartments_e0_0.5: RSS 1.810391e+12 latent 2.0000000000006595 bound lower_2d starts_within_1 26/26
+kept SEIRD_four_compartments_e0_1: RSS 1.798434e+12 latent 2.000000000005093 bound lower_2d starts_within_1 26/26
+kept SEIRD_four_compartments_e0_2: RSS 1.793197e+12 latent 2.0000000000000004 bound lower_2d starts_within_1 26/26
+kept SEIRD_four_compartments_e0_4: RSS 1.826872e+12 latent 10.383271801703248 bound neither starts_within_1 26/26
+kept SEIRD_four_compartments_e0_8: RSS 2.035217e+12 latent 13.999999999999998 bound upper_14d starts_within_1 26/26
+kept SEIRD_four_compartments_e0_12: RSS 2.610115e+12 latent 13.999999999999815 bound upper_14d starts_within_1 26/26
+kept SEIRD_four_compartments_e0_16: RSS 3.379500e+12 latent 13.999999999999998 bound upper_14d starts_within_1 26/26
+kept SEIRD_four_compartments_e0_24: RSS 5.244036e+12 latent 13.999999999999998 bound upper_14d starts_within_1 26/26
+delta SEIRD_I_only_e0_0: ΔAIC -352.873 1/σ 14.0000 ever 0.6208 dip 0.2839 day 11
+delta SEIRD_I_only_e0_0.25: ΔAIC -321.372 1/σ 14.0000 ever 0.6109 dip 0.3343 day 11
+delta SEIRD_I_only_e0_0.5: ΔAIC -289.265 1/σ 14.0000 ever 0.6019 dip 0.3859 day 11
+delta SEIRD_I_only_e0_1: ΔAIC -227.142 1/σ 14.0000 ever 0.5860 dip 0.4913 day 10
+delta SEIRD_I_only_e0_2: ΔAIC -118.658 1/σ 14.0000 ever 0.5595 dip 0.7065 day 8
+delta SEIRD_I_only_e0_4: ΔAIC +43.108 1/σ 14.0000 ever 0.5184 dip 1.0000 day 0
+delta SEIRD_I_only_e0_8: ΔAIC +250.219 1/σ 14.0000 ever 0.4568 dip 1.0000 day 0
+delta SEIRD_I_only_e0_12: ΔAIC +389.212 1/σ 14.0000 ever 0.4082 dip 1.0000 day 0
+delta SEIRD_I_only_e0_16: ΔAIC +497.156 1/σ 14.0000 ever 0.3689 dip 1.0000 day 0
+delta SEIRD_I_only_e0_24: ΔAIC +666.016 1/σ 14.0000 ever 0.3218 dip 1.0000 day 0
+delta SEIRD_four_compartments_e0_0: ΔAIC +66.249 1/σ 2.0000 ever 0.0854 dip 0.5651 day 59
+delta SEIRD_four_compartments_e0_0.25: ΔAIC +71.506 1/σ 2.0000 ever 0.0863 dip 0.7175 day 59
+delta SEIRD_four_compartments_e0_0.5: ΔAIC +69.818 1/σ 2.0000 ever 0.0871 dip 0.8699 day 59
+delta SEIRD_four_compartments_e0_1: ΔAIC +60.037 1/σ 2.0000 ever 0.0881 dip 1.0000 day 0
+delta SEIRD_four_compartments_e0_2: ΔAIC +55.733 1/σ 2.0000 ever 0.0887 dip 1.0000 day 0
+delta SEIRD_four_compartments_e0_4: ΔAIC +83.194 1/σ 10.3833 ever 0.0920 dip 1.0000 day 0
+delta SEIRD_four_compartments_e0_8: ΔAIC +242.598 1/σ 14.0000 ever 0.0898 dip 1.0000 day 0
+delta SEIRD_four_compartments_e0_12: ΔAIC +609.815 1/σ 14.0000 ever 0.0853 dip 1.0000 day 0
+delta SEIRD_four_compartments_e0_16: ΔAIC +991.115 1/σ 14.0000 ever 0.0813 dip 1.0000 day 0
+delta SEIRD_four_compartments_e0_24: ΔAIC +1639.616 1/σ 14.0000 ever 0.0744 dip 1.0000 day 0
+sanity {
+  "I_only": {
+    "delta_aic": -289.2653676883008,
+    "stored_delta_aic": -289.2654160075999,
+    "delta_aic_minus_stored": 4.831929913962085e-05,
+    "latent_days": 13.999999999999998,
+    "latent_bound": "upper_14d",
+    "ever_infected_share": 0.6019304836635071,
+    "stored_ever": 0.6019306166455793,
+    "dip_ratio": 0.3859133465796154,
+    "stored_dip_ratio": 0.38591339731348223,
+    "dip_day": 11,
+    "stored_dip_day": 11,
+    "rss": 24527255285.819,
+    "stored_rss": 24527253673.25818,
+    "rss_rel": 6.574567389464244e-08,
+    "sird_rss_rel": 6.520093454931146e-08,
+    "pass": true,
+    "reasons": []
+  },
+  "four_compartments": {
+    "delta_aic": 69.81783018401816,
+    "stored_delta_aic": 69.81904850241699,
+    "delta_aic_minus_stored": -0.001218318398827023,
+    "latent_days": 2.0000000000006595,
+    "latent_bound": "lower_2d",
+    "ever_infected_share": 0.08707446087373105,
+    "stored_ever": 0.08708242977812342,
+    "dip_ratio": 0.8699015509171812,
+    "stored_dip_ratio": 0.8700550999614587,
+    "dip_day": 59,
+    "stored_dip_day": 59,
+    "rss": 1810390836057.4172,
+    "stored_rss": 1810392226710.1982,
+    "rss_rel": 7.681499956133377e-07,
+    "sird_rss_rel": 5.726868345721139e-08,
+    "pass": true,
+    "reasons": []
+  }
+}
+elapsed 1014.0s sanity_pass True
+

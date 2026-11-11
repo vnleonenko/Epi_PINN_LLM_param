@@ -1,0 +1,112 @@
+{
+  "dataset": "Phase 1 (model calibration)/real_datasets/covid-19_Kouprianov.csv",
+  "N": 6000000.0,
+  "n_points": 369,
+  "train_size": 369,
+  "initial_guess": {
+    "beta": 0.1133380423496375,
+    "gamma": 0.1,
+    "mu": 0.01,
+    "sigma": 0.1923076923076923
+  },
+  "e0_factor": 0.5,
+  "E0": 2098.5,
+  "epochs": 10000,
+  "lambdas": {
+    "lambda_data": 1.0,
+    "lambda_ode": 1.0,
+    "lambda_ic": 0.1,
+    "lambda_bc": 0.0
+  },
+  "param_lr": 0.01,
+  "network_lr": 0.0001,
+  "restore_best": true,
+  "seeds": 10,
+  "e0_sensitivity": [
+    0.25,
+    1.0
+  ],
+  "sensitivity_seeds": 5,
+  "convergence": {
+    "window_epochs": 1000,
+    "max_relative_change": 0.01
+  },
+  "lsq": {
+    "bounds": {
+      "beta": [
+        0.0001,
+        5.0
+      ],
+      "sigma": [
+        0.001,
+        100.0
+      ],
+      "gamma": [
+        0.0001,
+        2.0
+      ],
+      "mu": [
+        1e-07,
+        0.5
+      ]
+    },
+    "incubation_2_14_sigma": [
+      0.07142857142857142,
+      0.5
+    ],
+    "e0_profile": [
+      0.0,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      12.0,
+      16.0,
+      24.0
+    ],
+    "quick_grid": false,
+    "e0_modes": [
+      "fixed",
+      "self-consistent",
+      "growth-consistent",
+      "E-stationary"
+    ],
+    "e0_rules": {
+      "self-consistent": "E(0) = I(0) (gamma + mu) / sigma, so dI/dt(0) = 0",
+      "growth-consistent": "E(0) = I(0) (r + gamma + mu) / sigma, r = observed growth over the first 10 days",
+      "E-stationary": "E(0) = beta S(0) I(0) / (N sigma), so dE/dt(0) = 0"
+    },
+    "E0_note": "E0 and e0_factor above apply to the PINN runs and the e0_mode = fixed rows"
+  },
+  "criteria": {
+    "(specified)": "S, I, R, D, one variance (specified)",
+    "_IRD": "I, R, D, one variance",
+    "_IRDsep": "I, R, D, one variance per compartment",
+    "_I": "I only (shape of the infected curve)"
+  },
+  "aic": "n ln(RSS) + 2k, SIBIRCON 2022 Eq. 6; k = 3 (SIRD) / 4 (SEIR-D)",
+  "workers": 5,
+  "threads_per_worker": 2,
+  "quick": false,
+  "provenance": {
+    "python": "3.9.6",
+    "torch": "2.8.0",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "pandas": "2.2.3",
+    "git_commit": "a8d83f7b8da5f6d6cb3c41f28721fad6808da9ad",
+    "uncommitted_files": [
+      " M \"Phase 1 (model calibration)/full_wave_calibration.py\""
+    ],
+    "files_sha256": {
+      "Phase 1 (model calibration)/full_wave_calibration.py": "f414be912daaaa394b5358bf6ae322f3cd9c9760f8eb7035fa35ca633992dc56",
+      "agents/PINN_seird.py": "389d7799efc644c5c9061c73bf7b6a609c8ebdfefe2e180abd35ceb1e34ef792",
+      "agents/PINN_const.py": "e4161cfab53eca5e47f5be7790ea47e4891bb1f08e429b846e0f667d96d59c64",
+      "agents/PINNAgent.py": "de89c7bb31d3a33becffd4ccf4e44e10d67654bf5e3caa7aeda041e01eb06aa1",
+      "utils/model_selection.py": "e2fa8cf47bf5b2594a411b04495eb96020238023ec276fcecb62f6e46dc0e99a",
+      "Phase 1 (model calibration)/real_datasets/covid-19_Kouprianov.csv": "bde98003e5fd10331bcd0adf2a2f7c8ccb75398b34296de47355b54b060f3aab"
+    }
+  }
+}
