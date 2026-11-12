@@ -1,0 +1,92 @@
+{
+  "smoke": false,
+  "protocol_md5": "3bb11a2e3943b91f115f3294fb4adb11",
+  "script_md5": "874f3a5f3eae2ede6526aa325f8cb663",
+  "knobs": {
+    "BETA0": 0.1219,
+    "GAMMA0": 0.099,
+    "MU0": 0.0099,
+    "DAY0": 264.3,
+    "HEIGHT0": 39121.0,
+    "R_GROWTH0": 0.013,
+    "CFR0": 0.0909,
+    "T_MAX": 400,
+    "N_OUT": 1000,
+    "GRID_N": 41,
+    "N_LHS": 20,
+    "LHS_SEED": 0,
+    "SLSQP_OPTIONS": {
+      "ftol": 1e-12,
+      "eps": 1e-06,
+      "maxiter": 200,
+      "disp": false
+    },
+    "TRUST_OPTIONS": {
+      "gtol": 1e-08,
+      "xtol": 1e-10,
+      "maxiter": 200,
+      "verbose": 0
+    },
+    "ALGEBRAIC_ATOL": 1e-12,
+    "J_COMPARE_ATOL": 1e-12,
+    "BOUND_VIOLATION_ATOL": 1e-08,
+    "windows": {
+      "D": [
+        [
+          0.1119,
+          0.1319
+        ],
+        [
+          0.0985,
+          0.0995
+        ],
+        [
+          0.00985,
+          0.00995
+        ]
+      ],
+      "M": [
+        [
+          0.1119,
+          0.1319
+        ],
+        [
+          0.0985,
+          0.0995
+        ],
+        [
+          0.0089,
+          0.0109
+        ]
+      ],
+      "S": [
+        [
+          0.1119,
+          0.1319
+        ],
+        [
+          0.089,
+          0.109
+        ],
+        [
+          0.00985,
+          0.00995
+        ]
+      ]
+    }
+  },
+  "initial_state": {
+    "S": 5995513,
+    "I": 4197,
+    "R": 248,
+    "D": 42,
+    "N": 6000000
+  },
+  "n_sim_total": 682334,
+  "n_sanity_and_checks": 32,
+  "grid_wall_s": 64.38498497500018,
+  "wall_s": 263.467219139,
+  "results_md5": "7048071e4296853637a6f8ffdafc20ec",
+  "intent_hits": [],
+  "parser_hits": []
+}

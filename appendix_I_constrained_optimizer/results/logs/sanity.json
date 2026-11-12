@@ -1,0 +1,20 @@
+{
+  "critic_day": 264.2642642642643,
+  "critic_height": 39121.31352176054,
+  "critic_day_rounded": 264.3,
+  "critic_height_rounded": 39121,
+  "critic_r": 0.012999999999999989,
+  "critic_cfr": 0.09090909090909091,
+  "parabolic": {
+    "dt_day": 0.1,
+    "n_points": 4001,
+    "flag": "ok",
+    "peak_day": 264.0956551367127,
+    "peak_height": 39121.361674921405,
+    "rounded_day": 264.1,
+    "rounded_height": 39121,
+    "nfev": 140
+  },
+  "pass": true,
+  "seconds": 0.0031796490000033373
+}

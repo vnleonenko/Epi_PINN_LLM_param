@@ -1,0 +1,98 @@
+Constrained optimizer experiment (frozen protocol)
+smoke=False grid_n=41 n_lhs=20 outdir=/agent/repos/viruses_submission_refinement/experiments/r3_constrained_optimizer
+python 3.12.3 numpy 2.5.4 scipy 1.18.1
+sanity critic day 264.264264 -> 264.3, height 39121.3135 -> 39121, pass=True
+parabolic diagnostic day 264.095655 -> 264.1, height 39121.3617 -> 39121 (not used)
+baseline conservation {"min_S": 4915595.870833641, "min_I": 4197.0, "min_R": 248.0, "min_D": 42.0, "max_abs_conservation_error": 2.7939677238464355e-09, "nonnegative": true, "conserved": true}
+predicate logic checks passed
+intent: no Intent Parser log file was found in the repository
+ref Table 2 higher: day 197.7978 (pub 197.8), height 100454.50 (pub 100455.0), match=True
+ref Table 2 lower: day 305.9059 (pub 305.9), height 18273.30 (pub 18273.0), match=True
+ref Table 2 earlier: day 197.7978 (pub 197.8), height 100454.50 (pub 100455.0), match=True
+ref Table 2 later: day 312.7127 (pub 312.7), height 12554.75 (pub 12555.0), match=True
+ref Table 2 growth: day 195.3954 (pub 195.4), height 104847.68 (pub 104848.0), match=True
+ref Table 2 mortality: day 268.2683 (pub 268.3), height 35894.26 (pub 35894.0), match=True
+ref Table 3 higher: day 271.4715 (pub 271.5), height 42257.20 (pub 42257.0), match=True
+ref Table 3 lower: day 257.0571 (pub 257.1), height 36356.28 (pub 36356.0), match=True
+ref Table 3 earlier: day 243.8438 (pub 244.2), height 39292.55 (pub 39121.0), match=False
+ref Table 3 later: day 287.8879 (pub 287.9), height 38920.12 (pub 39121.0), match=False
+grid D 41^3 = 68921
+  grid batch 1/69
+  grid batch 11/69
+  grid batch 21/69
+  grid batch 31/69
+  grid batch 41/69
+  grid batch 51/69
+  grid batch 61/69
+  grid batch 69/69
+grid D done in 20.1s, nan peaks 0
+grid M 41^3 = 68921
+  grid batch 1/69
+  grid batch 11/69
+  grid batch 21/69
+  grid batch 31/69
+  grid batch 41/69
+  grid batch 51/69
+  grid batch 61/69
+  grid batch 69/69
+grid M done in 21.0s, nan peaks 0
+grid S 41^3 = 68921
+  grid batch 1/69
+  grid batch 11/69
+  grid batch 21/69
+  grid batch 31/69
+  grid batch 41/69
+  grid batch 51/69
+  grid batch 61/69
+  grid batch 69/69
+grid S done in 23.3s, nan peaks 0
+optimize D higher T1 window D
+  -> feasible=yes J=2.049738771123475e-06 grid_feas=33657 conv=21 sims=6067 t=2.3s
+optimize D higher T2 window D
+  -> feasible=yes J=0.005914010560401912 grid_feas=1000 conv=21 sims=21818 t=11.3s
+optimize D lower T1 window D
+  -> feasible=yes J=2.1161099202203488e-06 grid_feas=33653 conv=21 sims=2567 t=0.9s
+optimize D lower T2 window D
+  -> feasible=yes J=0.0013560499937713187 grid_feas=17648 conv=21 sims=15664 t=4.6s
+optimize D earlier T1 window D
+  -> feasible=yes J=1.5323845818280158e-06 grid_feas=35512 conv=12 sims=27390 t=12.2s
+optimize D earlier T2 window D
+  -> feasible=yes J=0.006102142960022057 grid_feas=975 conv=1 sims=52217 t=22.9s
+optimize D later T1 window D
+  -> feasible=yes J=2.8458847696048402e-06 grid_feas=32616 conv=15 sims=23876 t=10.1s
+optimize D later T2 window D
+  -> feasible=yes J=0.0028072420626131813 grid_feas=2368 conv=1 sims=51326 t=19.3s
+optimize D growth T1 window D
+  -> feasible=yes J=6.143314902850303e-06 grid_feas=33165 conv=21 sims=27 t=0.4s
+optimize D growth T2 window D
+  -> feasible=yes J=0.0067135386456153665 grid_feas=33 conv=21 sims=43 t=1.1s
+optimize D mortality T1 window M
+  -> feasible=yes J=0.0007965815672134394 grid_feas=23493 conv=21 sims=25 t=0.1s
+optimize D mortality T2 window M
+  -> feasible=yes J=0.0030909217716829944 grid_feas=14227 conv=21 sims=30 t=0.1s
+optimize S higher T1 window S
+  -> feasible=yes J=2.0497387711243654e-06 grid_feas=2859 conv=20 sims=6773 t=3.0s
+optimize S higher T2 window S
+  -> feasible=yes J=1.4286748402955656e-05 grid_feas=2356 conv=20 sims=8758 t=3.9s
+optimize S lower T1 window S
+  -> feasible=yes J=2.1161099202204682e-06 grid_feas=4146 conv=21 sims=3702 t=1.8s
+optimize S lower T2 window S
+  -> feasible=yes J=1.199893320297681e-05 grid_feas=3671 conv=18 sims=5947 t=2.1s
+optimize S earlier T1 window S
+  -> feasible=yes J=4.993319928384791e-07 grid_feas=704 conv=17 sims=23852 t=12.9s
+optimize S earlier T2 window S
+  -> feasible=no J=None grid_feas=0 conv=0 sims=56118 t=20.5s
+optimize S later T1 window S
+  -> feasible=yes J=1.922612604684368e-06 grid_feas=632 conv=9 sims=42618 t=18.8s
+optimize S later T2 window S
+  -> feasible=no J=None grid_feas=0 conv=0 sims=61282 t=22.9s
+optimize G growth T1 window D
+  -> feasible=no J=None grid_feas=0 conv=0 sims=18207 t=7.4s
+optimize G growth T2 window D
+  -> feasible=no J=None grid_feas=0 conv=0 sims=16891 t=7.4s
+optimize G mortality T1 window M
+  -> feasible=yes J=0.0007965984825360044 grid_feas=544 conv=21 sims=18719 t=7.1s
+optimize G mortality T2 window M
+  -> feasible=yes J=0.0030909217716829944 grid_feas=329 conv=21 sims=11622 t=5.9s
+Reported solutions were integrated again. 20 feasible rows were checked. Compartment negativity or a conservation error above 1e-4 person: 0. J differing from the formula by more than 1e-9: 0. Baseline conservation error 2.794e-09, minimum compartments S 4915595.871, I 4197.000, R 248.000, D 42.000.
+done in 263.5s, unique sims about 682334
