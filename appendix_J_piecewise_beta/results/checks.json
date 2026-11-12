@@ -1,0 +1,44 @@
+[
+  {
+    "model": "constant",
+    "finite": true,
+    "min_compartment": 42.0,
+    "max_abs_N_error": 1.862645149230957e-09,
+    "positive": true,
+    "conserved": true,
+    "tight_rel_rmse_I": 1.1669946943608325e-06,
+    "solver_robust": true,
+    "continuity_max_abs": 0.10709784831851721,
+    "nested_rel_rmse_I": 0.0,
+    "nested_ok": true,
+    "pass": true
+  },
+  {
+    "model": "bp2",
+    "finite": true,
+    "min_compartment": 42.0,
+    "max_abs_N_error": 3.725290298461914e-09,
+    "positive": true,
+    "conserved": true,
+    "tight_rel_rmse_I": 1.3939635658298593e-06,
+    "solver_robust": true,
+    "continuity_max_abs": 0.21687851939350367,
+    "nested_rel_rmse_I": 9.053044929961574e-07,
+    "nested_ok": true,
+    "pass": true
+  },
+  {
+    "model": "bp3",
+    "finite": true,
+    "min_compartment": 42.0,
+    "max_abs_N_error": 3.725290298461914e-09,
+    "positive": true,
+    "conserved": true,
+    "tight_rel_rmse_I": 1.4696420994906273e-06,
+    "solver_robust": true,
+    "continuity_max_abs": 0.21357208862900734,
+    "nested_rel_rmse_I": 6.769806087103358e-07,
+    "nested_ok": true,
+    "pass": true
+  }
+]

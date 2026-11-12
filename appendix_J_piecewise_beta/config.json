@@ -1,0 +1,66 @@
+{
+  "experiment": "R3.7",
+  "question": "Would a constrained piecewise-constant beta(t) with exactly 2 or exactly 3 breakpoints reproduce the day 110-150 acceleration of the first-wave active-case series, relative to constant beta, under one common retrospective fit?",
+  "not_a_forecast": true,
+  "series": {
+    "file": "data/covid-19_Kouprianov.csv",
+    "sha256": "bde98003e5fd10331bcd0adf2a2f7c8ccb75398b34296de47355b54b060f3aab",
+    "day0_meaning": "5 July 2020",
+    "last_day_meaning": "8 July 2021",
+    "n_days": 369,
+    "t_min": 0,
+    "t_max": 368,
+    "N": 6000000.0,
+    "y0_from": "row t=0, columns S,I,R,D, no R or D offset"
+  },
+  "objective": {
+    "name": "daily_I_sum_of_squares",
+    "channels_in_objective": ["I"],
+    "formula": "sum_{t=0}^{368} (I_sim(t) - I_obs(t))^2",
+    "rationale": "Appendix F / Table A13 direct least squares on I(t), n=369. Not the Phase-1 weekly downsampled MSE."
+  },
+  "solver": {
+    "method": "RK45",
+    "rtol": 1e-6,
+    "atol": 1e-8,
+    "integration": "one solve_ivp call per segment; state at the right endpoint is the next segment initial state"
+  },
+  "bounds": {
+    "beta": [0.01, 0.99],
+    "gamma": [0.001, 0.5],
+    "mu": [0.0001, 0.1],
+    "source": "SIRD_calibration.ipynb cell 0 calibrate_sird bounds"
+  },
+  "breakpoints": {
+    "counts": [0, 2, 3],
+    "segments": [1, 3, 4],
+    "min_segment_days": 14.0,
+    "date_parameterization": "softmax on excess length above 14 days; z components bounded to [-6, 6]",
+    "count_fixed_by_experimenter": true,
+    "dates_fitted": true
+  },
+  "optimizer": {
+    "method": "L-BFGS-B",
+    "n_starts": 16,
+    "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    "rng": "numpy Generator PCG64(20261108 + seed)",
+    "maxiter": 5000,
+    "maxfun": 20000,
+    "ftol": 1e-12,
+    "gtol": 1e-8,
+    "start0": {"beta_all_segments": 0.1219, "gamma": 0.099, "mu": 0.0099, "z": 0},
+    "other_starts": "log-uniform beta, gamma, mu inside bounds; z uniform on [-2, 2]; independent segment multipliers log-normal sigma 0.35 around the draw"
+  },
+  "contextual_curve": {
+    "label": "published Phase-1 constant, 120-day fit, not the matched refit",
+    "beta": 0.1219,
+    "gamma": 0.099,
+    "mu": 0.0099
+  },
+  "metrics": {
+    "g_early": "mean of log(I[t+1]/I[t]) for t=0..109 (through day 110)",
+    "g_accel": "mean of log(I[t+1]/I[t]) for t=110..149 (through day 150)",
+    "delta_I_110_150": "I(150) - I(110)",
+    "full_window": ["rss_I", "rmse_I", "mae_I", "peak_day_I", "peak_height_I", "rmse_S", "rmse_R", "rmse_D"]
+  }
+}

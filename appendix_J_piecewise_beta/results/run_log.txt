@@ -1,0 +1,63 @@
+BUDGET LOCKED {"locked_before_optimization": true, "maxiter": 5000, "maxfun": 20000, "ftol": 1e-12, "gtol": 1e-08, "method": "L-BFGS-B", "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}
+fresh16 constant seed 0: rss=5.400737e+10 success=True status=0 nit=9 nfev=56 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 1: rss=5.400735e+10 success=True status=0 nit=22 nfev=228 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 2: rss=5.400735e+10 success=True status=0 nit=23 nfev=288 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 3: rss=5.400737e+10 success=True status=0 nit=10 nfev=224 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 4: rss=5.400735e+10 success=True status=0 nit=23 nfev=288 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 5: rss=5.400737e+10 success=True status=0 nit=17 nfev=160 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 6: rss=5.400735e+10 success=True status=0 nit=23 nfev=288 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 7: rss=5.400735e+10 success=True status=0 nit=23 nfev=288 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 8: rss=5.400735e+10 success=True status=0 nit=23 nfev=288 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 9: rss=5.400737e+10 success=True status=0 nit=9 nfev=136 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 10: rss=5.400735e+10 success=True status=0 nit=23 nfev=288 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 11: rss=5.400737e+10 success=True status=0 nit=23 nfev=244 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 12: rss=5.400735e+10 success=True status=0 nit=22 nfev=276 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 13: rss=5.400737e+10 success=True status=0 nit=15 nfev=128 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 14: rss=6.370000e+11 success=True status=0 nit=9 nfev=96 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 constant seed 15: rss=5.400735e+10 success=True status=0 nit=23 nfev=288 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 0: rss=9.468534e+08 success=True status=0 nit=72 nfev=1188 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 1: rss=5.375949e+10 success=True status=0 nit=53 nfev=729 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 2: rss=1.111010e+10 success=True status=0 nit=131 nfev=2250 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 3: rss=7.793245e+11 success=False status=2 nit=17 nfev=972 ABNORMAL: 
+fresh16 bp2 seed 4: rss=1.708425e+10 success=True status=0 nit=535 nfev=7047 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 5: rss=9.965522e+09 success=True status=0 nit=88 nfev=1341 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 6: rss=1.708700e+10 success=True status=0 nit=58 nfev=936 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 7: rss=1.708555e+10 success=True status=0 nit=69 nfev=918 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 8: rss=6.140690e+09 success=True status=0 nit=56 nfev=1125 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 9: rss=1.708430e+10 success=True status=0 nit=66 nfev=819 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 10: rss=5.399745e+10 success=True status=0 nit=14 nfev=684 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 11: rss=1.110888e+10 success=True status=0 nit=51 nfev=774 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 12: rss=5.375940e+10 success=True status=0 nit=77 nfev=1719 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 13: rss=9.469524e+08 success=True status=0 nit=127 nfev=2160 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 14: rss=1.110987e+10 success=True status=0 nit=37 nfev=549 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp2 seed 15: rss=1.090003e+10 success=True status=0 nit=47 nfev=738 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 0: rss=8.351114e+08 success=True status=0 nit=174 nfev=2530 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 1: rss=9.670521e+09 success=True status=0 nit=66 nfev=1243 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 2: rss=9.044363e+08 success=True status=0 nit=453 nfev=9119 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 3: rss=9.033667e+08 success=True status=0 nit=149 nfev=2475 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 4: rss=9.352176e+08 success=True status=0 nit=115 nfev=1848 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 5: rss=5.506647e+09 success=True status=0 nit=205 nfev=3234 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 6: rss=7.391994e+11 success=False status=2 nit=14 nfev=1408 ABNORMAL: 
+fresh16 bp3 seed 7: rss=6.011383e+09 success=True status=0 nit=144 nfev=2970 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 8: rss=5.784347e+09 success=True status=0 nit=96 nfev=1793 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 9: rss=5.374852e+10 success=False status=2 nit=180 nfev=4488 ABNORMAL: 
+fresh16 bp3 seed 10: rss=9.344305e+08 success=True status=0 nit=202 nfev=3256 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 11: rss=6.309652e+09 success=True status=0 nit=97 nfev=1628 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 12: rss=5.615264e+09 success=True status=0 nit=168 nfev=3542 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 13: rss=8.667616e+08 success=True status=0 nit=190 nfev=3652 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 14: rss=5.453540e+09 success=True status=0 nit=193 nfev=3817 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+fresh16 bp3 seed 15: rss=7.638078e+11 success=True status=0 nit=1 nfev=33 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+continuation_previous_best constant seed previous_best: rss=5.400735e+10 success=False status=2 nit=0 nfev=72 ABNORMAL: 
+continuation_previous_best bp2 seed previous_best: rss=9.469524e+08 success=True status=0 nit=38 nfev=513 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+continuation_previous_best bp3 seed previous_best: rss=3.520404e+09 success=True status=0 nit=1 nfev=33 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+nested embed eval rss=9.468541e+08 bp2 rss=9.468534e+08
+nested_bp2_embed_optimized bp3 seed embed_opt: rss=8.452893e+08 success=True status=0 nit=113 nfev=2343 CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+DONE {
+  "runtime": {
+    "constant": 43.104520519999824,
+    "bp2": 236.04989884299994,
+    "bp3": 482.3569917220011
+  },
+  "accel_obs": 0.016424604875735223
+}
+EXIT:0
