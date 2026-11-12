@@ -1,0 +1,448 @@
+{
+  "runtime": {
+    "device": "cpu",
+    "cuda": false,
+    "torch": "2.15.0+cpu",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "python": "3.12.3",
+    "torch_num_threads": 4,
+    "deterministic_algorithms": true,
+    "pinn_sha256": "e4161cfab53eca5e47f5be7790ea47e4891bb1f08e429b846e0f667d96d59c64",
+    "snapshot_pinn_sha256": "e4161cfab53eca5e47f5be7790ea47e4891bb1f08e429b846e0f667d96d59c64",
+    "surrogate_sha256": "1bd03d437c9f7cb51a43085071632f3c0819858fef719991ead172fbfa8ebc9f",
+    "snapshot_surrogate_sha256": "1bd03d437c9f7cb51a43085071632f3c0819858fef719991ead172fbfa8ebc9f",
+    "pinn_matches_snapshot": true,
+    "surrogate_matches_snapshot": true
+  },
+  "ics": {
+    "case1": {
+      "S0": 5995513.0,
+      "I0": 4197.0,
+      "R0": 248.0,
+      "D0": 42.0,
+      "N": 6000000.0,
+      "n_rows": 369
+    },
+    "case2": {
+      "S0": 5996610.0,
+      "I0": 2911.0,
+      "R0": 440.0,
+      "D0": 39.0,
+      "N": 6000000.0,
+      "n_rows": 134
+    }
+  },
+  "checks": {
+    "S2": {
+      "pass": true,
+      "unequal_fields_besides_lambda_ode": [],
+      "A": {
+        "input_dim": 1,
+        "hidden_layers": [
+          128,
+          256,
+          128
+        ],
+        "activation": "tanh",
+        "n_outputs": 4,
+        "output_transform": "per-compartment z-score inverse, then softplus",
+        "time_normalization": "none; network input is time in days",
+        "compartment_normalization": "TorchStandardScaler mean and population std on the training slice",
+        "train_points": 1000,
+        "t_min_day": 0.0,
+        "t_max_day": 400.0,
+        "epochs": 10000,
+        "weight_selection": "weights after the last epoch (index 9999); the source never reloads a best checkpoint",
+        "collocation": "the same 1000 training times; no separate collocation grid",
+        "optimizer": "Adam",
+        "learning_rate": 0.0001,
+        "adam_betas": [
+          0.9,
+          0.999
+        ],
+        "adam_eps": 1e-08,
+        "weight_decay": 0.0,
+        "scheduler": "ReduceLROnPlateau",
+        "scheduler_patience": 1000,
+        "scheduler_factor": 0.5,
+        "scheduler_mode": "min",
+        "scheduler_threshold": 0.0001,
+        "scheduler_threshold_mode": "rel",
+        "scheduler_metric": "total loss (different for B because lambda_ode is 0)",
+        "lambda_data": 1.0,
+        "lambda_ic": 0.1,
+        "lambda_bc": 0.0,
+        "lambda_ode": 0.1,
+        "data_weight_S": 1.0,
+        "data_weight_I": 10.0,
+        "data_weight_R": 1.0,
+        "data_weight_D": 1.0,
+        "beta_gamma_mu": "frozen (requires_grad False)",
+        "dropout_p_train": 0.0,
+        "dropout_p_inference": 0.005,
+        "mc_passes": 100,
+        "mc_seed_offset": 1000,
+        "band_percentiles": [
+          2.5,
+          97.5
+        ],
+        "band_used_for_metrics": "unsmoothed percentiles from predict_with_uncertainty",
+        "ode_solver": "scipy.integrate.solve_ivp",
+        "ode_method": "RK45",
+        "rtol": 1e-06,
+        "atol": 1e-08,
+        "dtype": "float32"
+      },
+      "B": {
+        "input_dim": 1,
+        "hidden_layers": [
+          128,
+          256,
+          128
+        ],
+        "activation": "tanh",
+        "n_outputs": 4,
+        "output_transform": "per-compartment z-score inverse, then softplus",
+        "time_normalization": "none; network input is time in days",
+        "compartment_normalization": "TorchStandardScaler mean and population std on the training slice",
+        "train_points": 1000,
+        "t_min_day": 0.0,
+        "t_max_day": 400.0,
+        "epochs": 10000,
+        "weight_selection": "weights after the last epoch (index 9999); the source never reloads a best checkpoint",
+        "collocation": "the same 1000 training times; no separate collocation grid",
+        "optimizer": "Adam",
+        "learning_rate": 0.0001,
+        "adam_betas": [
+          0.9,
+          0.999
+        ],
+        "adam_eps": 1e-08,
+        "weight_decay": 0.0,
+        "scheduler": "ReduceLROnPlateau",
+        "scheduler_patience": 1000,
+        "scheduler_factor": 0.5,
+        "scheduler_mode": "min",
+        "scheduler_threshold": 0.0001,
+        "scheduler_threshold_mode": "rel",
+        "scheduler_metric": "total loss (different for B because lambda_ode is 0)",
+        "lambda_data": 1.0,
+        "lambda_ic": 0.1,
+        "lambda_bc": 0.0,
+        "lambda_ode": 0.0,
+        "data_weight_S": 1.0,
+        "data_weight_I": 10.0,
+        "data_weight_R": 1.0,
+        "data_weight_D": 1.0,
+        "beta_gamma_mu": "frozen (requires_grad False)",
+        "dropout_p_train": 0.0,
+        "dropout_p_inference": 0.005,
+        "mc_passes": 100,
+        "mc_seed_offset": 1000,
+        "band_percentiles": [
+          2.5,
+          97.5
+        ],
+        "band_used_for_metrics": "unsmoothed percentiles from predict_with_uncertainty",
+        "ode_solver": "scipy.integrate.solve_ivp",
+        "ode_method": "RK45",
+        "rtol": 1e-06,
+        "atol": 1e-08,
+        "dtype": "float32"
+      }
+    },
+    "S5": {
+      "pass": true,
+      "cases": {
+        "case1": {
+          "max_abs_tensor_vs_solver_float64": {
+            "S": 0.24947277922183275,
+            "I": 0.0038539115485036746,
+            "R": 0.062376419780775905,
+            "D": 0.007790573145030066,
+            "max": 0.24947277922183275
+          },
+          "float32_quantization_max_abs": {
+            "S": 0.24947277922183275,
+            "I": 0.0038539115485036746,
+            "R": 0.062376419780775905,
+            "D": 0.007790573145030066
+          },
+          "pass_identity": true,
+          "solver_atol": 1e-08,
+          "solver_rtol": 1e-06,
+          "peak_day": 210.61061061061062,
+          "peak_height": 83777.3287523547,
+          "y0": {
+            "S0": 5995513.0,
+            "I0": 4197.0,
+            "R0": 248.0,
+            "D0": 42.0,
+            "N": 6000000.0
+          }
+        },
+        "case2": {
+          "max_abs_tensor_vs_solver_float64": {
+            "S": 0.24979963898658752,
+            "I": 0.0039018459647195414,
+            "R": 0.06247511459514499,
+            "D": 0.0039023751887725666,
+            "max": 0.24979963898658752
+          },
+          "float32_quantization_max_abs": {
+            "S": 0.24979963898658752,
+            "I": 0.0039018459647195414,
+            "R": 0.06247511459514499,
+            "D": 0.0039023751887725666
+          },
+          "pass_identity": true,
+          "solver_atol": 1e-08,
+          "solver_rtol": 1e-06,
+          "peak_day": 116.51651651651652,
+          "peak_height": 115320.96257297913,
+          "y0": {
+            "S0": 5996610.0,
+            "I0": 2911.0,
+            "R0": 440.0,
+            "D0": 39.0,
+            "N": 6000000.0
+          }
+        }
+      },
+      "case2_peak_matches_verification": true,
+      "note": "Training arrays are the solver output before the float32 cast inside EINN_PINN. The float32 tensor differs from float64 by rounding; that difference is the value reported and is produced by the source cast."
+    },
+    "S7": {
+      "pass": true,
+      "cases": {
+        "case1": {
+          "dt_days": 0.1000250062515629,
+          "rel_rms": {
+            "S": 6.219500504232652e-06,
+            "I": 2.215525306430499e-05,
+            "R": 5.718910689942099e-06,
+            "D": 5.718910690104614e-06
+          },
+          "max_rel_rms": 2.215525306430499e-05,
+          "pass": true
+        },
+        "case2": {
+          "dt_days": 0.1000250062515629,
+          "rel_rms": {
+            "S": 6.444925386061143e-06,
+            "I": 2.1953253722437064e-05,
+            "R": 5.838006367170172e-06,
+            "D": 5.838006367232231e-06
+          },
+          "max_rel_rms": 2.1953253722437064e-05,
+          "pass": true
+        }
+      }
+    },
+    "S3": {
+      "pass": true,
+      "pairs": {
+        "case1_seed0": {
+          "A": "ffff36992a249792d62f25dec6558bdf87d8f87f25ab104d5b6a32bfb08557f7",
+          "B": "ffff36992a249792d62f25dec6558bdf87d8f87f25ab104d5b6a32bfb08557f7",
+          "equal": true
+        },
+        "case1_seed1": {
+          "A": "6e18679105507751c3ae2247a40a86372d6f3b202874f9768ba8e095a86478ae",
+          "B": "6e18679105507751c3ae2247a40a86372d6f3b202874f9768ba8e095a86478ae",
+          "equal": true
+        },
+        "case1_seed2": {
+          "A": "fcb06dac2581c57f6646b154ab228f0889b8c322ac642f94f89339e1076fc16c",
+          "B": "fcb06dac2581c57f6646b154ab228f0889b8c322ac642f94f89339e1076fc16c",
+          "equal": true
+        },
+        "case1_seed3": {
+          "A": "61af03b064a44db7121389d777dc5d1881174e16e56666c2ae52d22f34736e2b",
+          "B": "61af03b064a44db7121389d777dc5d1881174e16e56666c2ae52d22f34736e2b",
+          "equal": true
+        },
+        "case1_seed4": {
+          "A": "269fdfdd7cd2ede34f306617ca2ed7c72007dea5bf68895a492f501bde8c2fcd",
+          "B": "269fdfdd7cd2ede34f306617ca2ed7c72007dea5bf68895a492f501bde8c2fcd",
+          "equal": true
+        },
+        "case1_seed5": {
+          "A": "659ce01593d43d88d1b59d4beea55d59994649a77d605ed1511ce6ea9595569a",
+          "B": "659ce01593d43d88d1b59d4beea55d59994649a77d605ed1511ce6ea9595569a",
+          "equal": true
+        },
+        "case1_seed6": {
+          "A": "841225b052ced610b0c791ea0e8b8cb58f8b44d1c95fc9f050b29fdd48186d58",
+          "B": "841225b052ced610b0c791ea0e8b8cb58f8b44d1c95fc9f050b29fdd48186d58",
+          "equal": true
+        },
+        "case1_seed7": {
+          "A": "302b25b650680cef6d734a007513b247edaf64a790921f8e985c2cafd8e296c7",
+          "B": "302b25b650680cef6d734a007513b247edaf64a790921f8e985c2cafd8e296c7",
+          "equal": true
+        },
+        "case1_seed8": {
+          "A": "183605430f346d5eed2e2d7b60b4a31b47a304f7f5bff667a80e668463018891",
+          "B": "183605430f346d5eed2e2d7b60b4a31b47a304f7f5bff667a80e668463018891",
+          "equal": true
+        },
+        "case1_seed9": {
+          "A": "19d538d47a5982cf78a7a1a9e860b9bf5c8de90cc97c260632bb16dd1ad093e0",
+          "B": "19d538d47a5982cf78a7a1a9e860b9bf5c8de90cc97c260632bb16dd1ad093e0",
+          "equal": true
+        },
+        "case2_seed0": {
+          "A": "59d5ec6b7843c104fc236df0a8d02c297d78f65153553701b9092a528085ce07",
+          "B": "59d5ec6b7843c104fc236df0a8d02c297d78f65153553701b9092a528085ce07",
+          "equal": true
+        },
+        "case2_seed1": {
+          "A": "b6017bb44d79d1065c5d1d6b9ab5f51bbbc8e2bec57dc86857427167726504b1",
+          "B": "b6017bb44d79d1065c5d1d6b9ab5f51bbbc8e2bec57dc86857427167726504b1",
+          "equal": true
+        },
+        "case2_seed2": {
+          "A": "161345e88cbaec312dc95270ead71594cfd51278f8acb93933dfe94c9f5b39b4",
+          "B": "161345e88cbaec312dc95270ead71594cfd51278f8acb93933dfe94c9f5b39b4",
+          "equal": true
+        },
+        "case2_seed3": {
+          "A": "d903d9f0d75ee57b5e7a024b9ca03df1e995477fe937becb41f17b2f4dae93e4",
+          "B": "d903d9f0d75ee57b5e7a024b9ca03df1e995477fe937becb41f17b2f4dae93e4",
+          "equal": true
+        },
+        "case2_seed4": {
+          "A": "ae2ad3b5e977681e586f2becf364797ead6ad558f696d7a9a6ee8c2ade5c21e5",
+          "B": "ae2ad3b5e977681e586f2becf364797ead6ad558f696d7a9a6ee8c2ade5c21e5",
+          "equal": true
+        },
+        "case2_seed5": {
+          "A": "cfad4e6329d93a2271965163a9485de235209579a689bdcd2efad906760d032f",
+          "B": "cfad4e6329d93a2271965163a9485de235209579a689bdcd2efad906760d032f",
+          "equal": true
+        },
+        "case2_seed6": {
+          "A": "abb6c49c43b16db558010ded4eb629708973a2f9f83e4c605979817ff75ae632",
+          "B": "abb6c49c43b16db558010ded4eb629708973a2f9f83e4c605979817ff75ae632",
+          "equal": true
+        },
+        "case2_seed7": {
+          "A": "470073852b07b8e83e7a19174638f5f6c39d8dec457daa44ebafb0ed850cd5f9",
+          "B": "470073852b07b8e83e7a19174638f5f6c39d8dec457daa44ebafb0ed850cd5f9",
+          "equal": true
+        },
+        "case2_seed8": {
+          "A": "a83ef1d915075493fd075c149d79433ef91a07a563b8ce98f5a59fe0f0303b6e",
+          "B": "a83ef1d915075493fd075c149d79433ef91a07a563b8ce98f5a59fe0f0303b6e",
+          "equal": true
+        },
+        "case2_seed9": {
+          "A": "986831ea2d90cd2a193c59d3ce2d3235676970d557d2778275f9cb9b84c013b6",
+          "B": "986831ea2d90cd2a193c59d3ce2d3235676970d557d2778275f9cb9b84c013b6",
+          "equal": true
+        }
+      }
+    },
+    "S4": {
+      "pass": true,
+      "max_abs_grad_diff_two_B_paths": 0.0,
+      "max_abs_grad_diff_B_vs_loss_that_includes_ode": 15027200.0,
+      "logged_ode_B": 97814872.0,
+      "logged_ode_with_term": 97814872.0,
+      "logged_ode_ref": 97814872.0
+    },
+    "S6": {
+      "h_days": 0.01,
+      "float32_rel_rms": {
+        "S": 0.0036949198693037033,
+        "I": 0.0004824052448384464,
+        "R": 0.0008578536799177527,
+        "D": 0.0013568047434091568
+      },
+      "float32_abs_rms": {
+        "S": 9.476332664489746,
+        "I": 0.12703877687454224,
+        "R": 3.260772943496704,
+        "D": 0.12866023182868958
+      },
+      "float64_rel_rms": {
+        "S": 9.837622463273236e-06,
+        "I": 1.8402250337077874e-05,
+        "R": 7.3466457188183864e-06,
+        "D": 1.2813406972989973e-05
+      },
+      "float64_abs_rms": {
+        "S": 0.02523047964045933,
+        "I": 0.0048461319472464185,
+        "R": 0.02792521365891191,
+        "D": 0.0012150431897444637
+      },
+      "float64_max_rel_rms": 1.8402250337077874e-05,
+      "pass": true
+    },
+    "A_matches_source_20_epochs": {
+      "pass": true,
+      "same_init": true,
+      "loss_equal": true,
+      "weight_equal": true,
+      "source_final_loss": 1367885348864.0,
+      "copy_final_loss": 1367885348864.0
+    },
+    "all_pass_before_S1": true,
+    "init_hashes": {
+      "case1_A_seed0": "ffff36992a249792d62f25dec6558bdf87d8f87f25ab104d5b6a32bfb08557f7",
+      "case1_B_seed0": "ffff36992a249792d62f25dec6558bdf87d8f87f25ab104d5b6a32bfb08557f7",
+      "case1_A_seed1": "6e18679105507751c3ae2247a40a86372d6f3b202874f9768ba8e095a86478ae",
+      "case1_B_seed1": "6e18679105507751c3ae2247a40a86372d6f3b202874f9768ba8e095a86478ae",
+      "case1_A_seed2": "fcb06dac2581c57f6646b154ab228f0889b8c322ac642f94f89339e1076fc16c",
+      "case1_B_seed2": "fcb06dac2581c57f6646b154ab228f0889b8c322ac642f94f89339e1076fc16c",
+      "case1_A_seed3": "61af03b064a44db7121389d777dc5d1881174e16e56666c2ae52d22f34736e2b",
+      "case1_B_seed3": "61af03b064a44db7121389d777dc5d1881174e16e56666c2ae52d22f34736e2b",
+      "case1_A_seed4": "269fdfdd7cd2ede34f306617ca2ed7c72007dea5bf68895a492f501bde8c2fcd",
+      "case1_B_seed4": "269fdfdd7cd2ede34f306617ca2ed7c72007dea5bf68895a492f501bde8c2fcd",
+      "case1_A_seed5": "659ce01593d43d88d1b59d4beea55d59994649a77d605ed1511ce6ea9595569a",
+      "case1_B_seed5": "659ce01593d43d88d1b59d4beea55d59994649a77d605ed1511ce6ea9595569a",
+      "case1_A_seed6": "841225b052ced610b0c791ea0e8b8cb58f8b44d1c95fc9f050b29fdd48186d58",
+      "case1_B_seed6": "841225b052ced610b0c791ea0e8b8cb58f8b44d1c95fc9f050b29fdd48186d58",
+      "case1_A_seed7": "302b25b650680cef6d734a007513b247edaf64a790921f8e985c2cafd8e296c7",
+      "case1_B_seed7": "302b25b650680cef6d734a007513b247edaf64a790921f8e985c2cafd8e296c7",
+      "case1_A_seed8": "183605430f346d5eed2e2d7b60b4a31b47a304f7f5bff667a80e668463018891",
+      "case1_B_seed8": "183605430f346d5eed2e2d7b60b4a31b47a304f7f5bff667a80e668463018891",
+      "case1_A_seed9": "19d538d47a5982cf78a7a1a9e860b9bf5c8de90cc97c260632bb16dd1ad093e0",
+      "case1_B_seed9": "19d538d47a5982cf78a7a1a9e860b9bf5c8de90cc97c260632bb16dd1ad093e0",
+      "case2_A_seed0": "59d5ec6b7843c104fc236df0a8d02c297d78f65153553701b9092a528085ce07",
+      "case2_B_seed0": "59d5ec6b7843c104fc236df0a8d02c297d78f65153553701b9092a528085ce07",
+      "case2_A_seed1": "b6017bb44d79d1065c5d1d6b9ab5f51bbbc8e2bec57dc86857427167726504b1",
+      "case2_B_seed1": "b6017bb44d79d1065c5d1d6b9ab5f51bbbc8e2bec57dc86857427167726504b1",
+      "case2_A_seed2": "161345e88cbaec312dc95270ead71594cfd51278f8acb93933dfe94c9f5b39b4",
+      "case2_B_seed2": "161345e88cbaec312dc95270ead71594cfd51278f8acb93933dfe94c9f5b39b4",
+      "case2_A_seed3": "d903d9f0d75ee57b5e7a024b9ca03df1e995477fe937becb41f17b2f4dae93e4",
+      "case2_B_seed3": "d903d9f0d75ee57b5e7a024b9ca03df1e995477fe937becb41f17b2f4dae93e4",
+      "case2_A_seed4": "ae2ad3b5e977681e586f2becf364797ead6ad558f696d7a9a6ee8c2ade5c21e5",
+      "case2_B_seed4": "ae2ad3b5e977681e586f2becf364797ead6ad558f696d7a9a6ee8c2ade5c21e5",
+      "case2_A_seed5": "cfad4e6329d93a2271965163a9485de235209579a689bdcd2efad906760d032f",
+      "case2_B_seed5": "cfad4e6329d93a2271965163a9485de235209579a689bdcd2efad906760d032f",
+      "case2_A_seed6": "abb6c49c43b16db558010ded4eb629708973a2f9f83e4c605979817ff75ae632",
+      "case2_B_seed6": "abb6c49c43b16db558010ded4eb629708973a2f9f83e4c605979817ff75ae632",
+      "case2_A_seed7": "470073852b07b8e83e7a19174638f5f6c39d8dec457daa44ebafb0ed850cd5f9",
+      "case2_B_seed7": "470073852b07b8e83e7a19174638f5f6c39d8dec457daa44ebafb0ed850cd5f9",
+      "case2_A_seed8": "a83ef1d915075493fd075c149d79433ef91a07a563b8ce98f5a59fe0f0303b6e",
+      "case2_B_seed8": "a83ef1d915075493fd075c149d79433ef91a07a563b8ce98f5a59fe0f0303b6e",
+      "case2_A_seed9": "986831ea2d90cd2a193c59d3ce2d3235676970d557d2778275f9cb9b84c013b6",
+      "case2_B_seed9": "986831ea2d90cd2a193c59d3ce2d3235676970d557d2778275f9cb9b84c013b6"
+    }
+  },
+  "peaks": {
+    "case1": {
+      "day": 210.61061061061062,
+      "height": 83777.3287523547
+    },
+    "case2": {
+      "day": 116.51651651651652,
+      "height": 115320.96257297913
+    }
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "hyperparams_A": {
+    "input_dim": 1,
+    "hidden_layers": [
+      128,
+      256,
+      128
+    ],
+    "activation": "tanh",
+    "n_outputs": 4,
+    "output_transform": "per-compartment z-score inverse, then softplus",
+    "time_normalization": "none; network input is time in days",
+    "compartment_normalization": "TorchStandardScaler mean and population std on the training slice",
+    "train_points": 1000,
+    "t_min_day": 0.0,
+    "t_max_day": 400.0,
+    "epochs": 10000,
+    "weight_selection": "weights after the last epoch (index 9999); the source never reloads a best checkpoint",
+    "collocation": "the same 1000 training times; no separate collocation grid",
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "adam_eps": 1e-08,
+    "weight_decay": 0.0,
+    "scheduler": "ReduceLROnPlateau",
+    "scheduler_patience": 1000,
+    "scheduler_factor": 0.5,
+    "scheduler_mode": "min",
+    "scheduler_threshold": 0.0001,
+    "scheduler_threshold_mode": "rel",
+    "scheduler_metric": "total loss (different for B because lambda_ode is 0)",
+    "lambda_data": 1.0,
+    "lambda_ic": 0.1,
+    "lambda_bc": 0.0,
+    "lambda_ode": 0.1,
+    "data_weight_S": 1.0,
+    "data_weight_I": 10.0,
+    "data_weight_R": 1.0,
+    "data_weight_D": 1.0,
+    "beta_gamma_mu": "frozen (requires_grad False)",
+    "dropout_p_train": 0.0,
+    "dropout_p_inference": 0.005,
+    "mc_passes": 100,
+    "mc_seed_offset": 1000,
+    "band_percentiles": [
+      2.5,
+      97.5
+    ],
+    "band_used_for_metrics": "unsmoothed percentiles from predict_with_uncertainty",
+    "ode_solver": "scipy.integrate.solve_ivp",
+    "ode_method": "RK45",
+    "rtol": 1e-06,
+    "atol": 1e-08,
+    "dtype": "float32"
+  },
+  "hyperparams_B": {
+    "input_dim": 1,
+    "hidden_layers": [
+      128,
+      256,
+      128
+    ],
+    "activation": "tanh",
+    "n_outputs": 4,
+    "output_transform": "per-compartment z-score inverse, then softplus",
+    "time_normalization": "none; network input is time in days",
+    "compartment_normalization": "TorchStandardScaler mean and population std on the training slice",
+    "train_points": 1000,
+    "t_min_day": 0.0,
+    "t_max_day": 400.0,
+    "epochs": 10000,
+    "weight_selection": "weights after the last epoch (index 9999); the source never reloads a best checkpoint",
+    "collocation": "the same 1000 training times; no separate collocation grid",
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "adam_eps": 1e-08,
+    "weight_decay": 0.0,
+    "scheduler": "ReduceLROnPlateau",
+    "scheduler_patience": 1000,
+    "scheduler_factor": 0.5,
+    "scheduler_mode": "min",
+    "scheduler_threshold": 0.0001,
+    "scheduler_threshold_mode": "rel",
+    "scheduler_metric": "total loss (different for B because lambda_ode is 0)",
+    "lambda_data": 1.0,
+    "lambda_ic": 0.1,
+    "lambda_bc": 0.0,
+    "lambda_ode": 0.0,
+    "data_weight_S": 1.0,
+    "data_weight_I": 10.0,
+    "data_weight_R": 1.0,
+    "data_weight_D": 1.0,
+    "beta_gamma_mu": "frozen (requires_grad False)",
+    "dropout_p_train": 0.0,
+    "dropout_p_inference": 0.005,
+    "mc_passes": 100,
+    "mc_seed_offset": 1000,
+    "band_percentiles": [
+      2.5,
+      97.5
+    ],
+    "band_used_for_metrics": "unsmoothed percentiles from predict_with_uncertainty",
+    "ode_solver": "scipy.integrate.solve_ivp",
+    "ode_method": "RK45",
+    "rtol": 1e-06,
+    "atol": 1e-08,
+    "dtype": "float32"
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "mc_seed": "seed+1000",
+  "runtime": {
+    "device": "cpu",
+    "cuda": false,
+    "torch": "2.15.0+cpu",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "python": "3.12.3",
+    "torch_num_threads": 4,
+    "deterministic_algorithms": true,
+    "pinn_sha256": "e4161cfab53eca5e47f5be7790ea47e4891bb1f08e429b846e0f667d96d59c64",
+    "snapshot_pinn_sha256": "e4161cfab53eca5e47f5be7790ea47e4891bb1f08e429b846e0f667d96d59c64",
+    "surrogate_sha256": "1bd03d437c9f7cb51a43085071632f3c0819858fef719991ead172fbfa8ebc9f",
+    "snapshot_surrogate_sha256": "1bd03d437c9f7cb51a43085071632f3c0819858fef719991ead172fbfa8ebc9f",
+    "pinn_matches_snapshot": true,
+    "surrogate_matches_snapshot": true
+  },
+  "train_seconds_by_run": {
+    "case1_A_seed0": 92.24218360299983,
+    "case1_A_seed1": 88.333383185,
+    "case1_A_seed2": 86.0455967490002,
+    "case1_A_seed3": 86.66394982999964,
+    "case1_A_seed4": 87.95596068999976,
+    "case1_A_seed5": 88.35671996099973,
+    "case1_A_seed6": 90.64915519600027,
+    "case1_A_seed7": 92.79457383499994,
+    "case1_A_seed8": 93.99518165999962,
+    "case1_A_seed9": 91.16249224800004,
+    "case1_B_seed0": 41.17391950499996,
+    "case1_B_seed1": 42.243604273000074,
+    "case1_B_seed2": 40.615050083999904,
+    "case1_B_seed3": 41.95068280400028,
+    "case1_B_seed4": 43.14323701600006,
+    "case1_B_seed5": 43.63911783899994,
+    "case1_B_seed6": 43.37895376100005,
+    "case1_B_seed7": 43.95737968900039,
+    "case1_B_seed8": 43.06402248099994,
+    "case1_B_seed9": 43.45067321700026,
+    "case2_A_seed0": 95.12885075600002,
+    "case2_A_seed1": 89.63067045600008,
+    "case2_A_seed2": 89.54475327,
+    "case2_A_seed3": 88.67310798699987,
+    "case2_A_seed4": 88.76747241999988,
+    "case2_A_seed5": 88.2452048419998,
+    "case2_A_seed6": 90.08180934199981,
+    "case2_A_seed7": 91.56398290900006,
+    "case2_A_seed8": 89.3697162100002,
+    "case2_A_seed9": 90.81185908999987,
+    "case2_B_seed0": 42.924277531999905,
+    "case2_B_seed1": 40.99453940700005,
+    "case2_B_seed2": 42.56899776,
+    "case2_B_seed3": 43.251623464999966,
+    "case2_B_seed4": 42.36040266400005,
+    "case2_B_seed5": 43.86106243799986,
+    "case2_B_seed6": 41.77228532799995,
+    "case2_B_seed7": 44.04005681699982,
+    "case2_B_seed8": 42.139241896000385,
+    "case2_B_seed9": 42.640886563000095
+  },
+  "s1": {
+    "pass": true,
+    "peak_h_err_pct": -0.15811312090266333,
+    "peak_day_err": -2.0020020020020013,
+    "published_interval_pct": [
+      0.2,
+      3.1
+    ],
+    "stop_outside": [
+      -1.5,
+      6.0
+    ],
+    "nan_flag": false,
+    "note": "Seed 0 is not a seed from Appendix E.3. The check asks only that the dropout-off peak-height error sit near +0.2% to +3.1%."
+  },
+  "flags": {
+    "case1": {
+      "range_overlap_peak_h": true,
+      "range_overlap_relrmse_I": true,
+      "A_lower_odeRes": {
+        "S": {
+          "A_lower": 9,
+          "n": 10
+        },
+        "I": {
+          "A_lower": 3,
+          "n": 10
+        },
+        "R": {
+          "A_lower": 6,
+          "n": 10
+        },
+        "D": {
+          "A_lower": 6,
+          "n": 10
+        }
+      }
+    },
+    "case2": {
+      "range_overlap_peak_h": true,
+      "range_overlap_relrmse_I": true,
+      "A_lower_odeRes": {
+        "S": {
+          "A_lower": 10,
+          "n": 10
+        },
+        "I": {
+          "A_lower": 6,
+          "n": 10
+        },
+        "R": {
+          "A_lower": 6,
+          "n": 10
+        },
+        "D": {
+          "A_lower": 10,
+          "n": 10
+        }
+      }
+    }
+  },
+  "checks_pass": {
+    "S2": true,
+    "S3": true,
+    "S4": true,
+    "S5": true,
+    "S6": true,
+    "S7": true,
+    "A_matches_source_20_epochs": true
+  },
+  "n_completed": 40,
+  "weight_selection": "weights after the last epoch (index 9999); the source never reloads a best checkpoint",
+  "collocation": "the same 1000 training times; no separate collocation grid",
+  "normalization": {
+    "time": "unnormalized days",
+    "compartments": "z-score on all 1000 training points, then softplus after the inverse transform",
+    "ode_derivative": "autograd of the physical output with respect to time in days; chain rule is inside autograd"
+  },
+  "band_used_for_metrics": "unsmoothed 2.5 and 97.5 percentiles from predict_with_uncertainty; not replaced by smoothing",
+  "post_hoc_correction": {
+    "trainings_rerun": false,
+    "raw_predictions_changed": false,
+    "results_per_run_changed": false,
+    "band_w_pct_winner_field": "blank; width is not an error metric",
+    "band_w_pct_A_numerically_narrower": {
+      "case1": "6/10",
+      "case2": "5/10",
+      "exact_ties": 0,
+      "this_is_not_a_quality_score": true
+    },
+    "sim_peak_in_band_winner_field": "already blank; 10/10 yes for A and B in both cases",
+    "other_non_error_flags_checked": "range_overlap flags are overlap tests, not winner counts; A_lower_odeRes counts were recomputed against paired rows and matched",
+    "fig_I_panel2": "fill remains saved unsmoothed percentiles; edges are gaussian_filter1d sigma=10 on those arrays, same call as create_comparison_plot with ci_smoothing_sigma=10; identical for A and B",
+    "source_textbox_width": "smoothed upper minus smoothed lower at the peak of the plotted mean; not the Appendix E.3 or band_w_pct width",
+    "s1_peak_h_err_pct": -0.15811312090266333,
+    "s1_note": "below the published +0.2% floor by about 0.36 percentage points; not revised"
+  }
+}

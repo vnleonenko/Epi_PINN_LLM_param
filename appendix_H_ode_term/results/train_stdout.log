@@ -1,0 +1,95 @@
+{
+  "device": "cpu",
+  "torch": "2.15.0+cpu",
+  "torch_num_threads": 4,
+  "pinn_matches_snapshot": true
+}
+running S2–S7 and the 20-epoch source-equivalence check
+Epoch     0 | Loss: 1744985128960.000000 | Data: 1316468948992.000000 | ODE: 97814872.000000
+Params: β=0.2331, γ=0.1823, μ=0.0070
+---
+check summary {"S2": true, "S3": true, "S4": true, "S5": true, "S6": true, "S7": true, "A_matches_source_20_epochs": true}
+pre-training checks passed
+START 1/40 case2_A_seed0
+FINISHED case2_A_seed0 in 1.6 min  peak_h_err_pct=-0.158  nan=False
+S1 PASS peak_h_err_pct=-0.1581
+START 2/40 case2_B_seed0
+FINISHED case2_B_seed0 in 0.7 min  peak_h_err_pct=-0.126  nan=False
+START 3/40 case2_A_seed1
+FINISHED case2_A_seed1 in 1.5 min  peak_h_err_pct=0.601  nan=False
+START 4/40 case2_B_seed1
+FINISHED case2_B_seed1 in 0.7 min  peak_h_err_pct=0.598  nan=False
+START 5/40 case2_A_seed2
+FINISHED case2_A_seed2 in 1.5 min  peak_h_err_pct=0.558  nan=False
+START 6/40 case2_B_seed2
+FINISHED case2_B_seed2 in 0.7 min  peak_h_err_pct=0.564  nan=False
+START 7/40 case2_A_seed3
+FINISHED case2_A_seed3 in 1.5 min  peak_h_err_pct=0.977  nan=False
+START 8/40 case2_B_seed3
+FINISHED case2_B_seed3 in 0.7 min  peak_h_err_pct=0.211  nan=False
+START 9/40 case2_A_seed4
+FINISHED case2_A_seed4 in 1.5 min  peak_h_err_pct=-3.197  nan=False
+START 10/40 case2_B_seed4
+FINISHED case2_B_seed4 in 0.7 min  peak_h_err_pct=-3.978  nan=False
+START 11/40 case2_A_seed5
+FINISHED case2_A_seed5 in 1.5 min  peak_h_err_pct=-5.292  nan=False
+START 12/40 case2_B_seed5
+FINISHED case2_B_seed5 in 0.7 min  peak_h_err_pct=-3.611  nan=False
+START 13/40 case2_A_seed6
+FINISHED case2_A_seed6 in 1.5 min  peak_h_err_pct=-0.745  nan=False
+START 14/40 case2_B_seed6
+FINISHED case2_B_seed6 in 0.7 min  peak_h_err_pct=-0.708  nan=False
+START 15/40 case2_A_seed7
+FINISHED case2_A_seed7 in 1.5 min  peak_h_err_pct=3.119  nan=False
+START 16/40 case2_B_seed7
+FINISHED case2_B_seed7 in 0.7 min  peak_h_err_pct=3.177  nan=False
+START 17/40 case2_A_seed8
+FINISHED case2_A_seed8 in 1.5 min  peak_h_err_pct=0.397  nan=False
+START 18/40 case2_B_seed8
+FINISHED case2_B_seed8 in 0.7 min  peak_h_err_pct=0.600  nan=False
+START 19/40 case2_A_seed9
+FINISHED case2_A_seed9 in 1.5 min  peak_h_err_pct=-0.013  nan=False
+START 20/40 case2_B_seed9
+FINISHED case2_B_seed9 in 0.7 min  peak_h_err_pct=-0.044  nan=False
+START 21/40 case1_A_seed0
+FINISHED case1_A_seed0 in 1.5 min  peak_h_err_pct=0.128  nan=False
+START 22/40 case1_B_seed0
+FINISHED case1_B_seed0 in 0.7 min  peak_h_err_pct=0.354  nan=False
+START 23/40 case1_A_seed1
+FINISHED case1_A_seed1 in 1.5 min  peak_h_err_pct=0.015  nan=False
+START 24/40 case1_B_seed1
+FINISHED case1_B_seed1 in 0.7 min  peak_h_err_pct=0.045  nan=False
+START 25/40 case1_A_seed2
+FINISHED case1_A_seed2 in 1.4 min  peak_h_err_pct=-0.256  nan=False
+START 26/40 case1_B_seed2
+FINISHED case1_B_seed2 in 0.7 min  peak_h_err_pct=-0.423  nan=False
+START 27/40 case1_A_seed3
+FINISHED case1_A_seed3 in 1.4 min  peak_h_err_pct=-4.180  nan=False
+START 28/40 case1_B_seed3
+FINISHED case1_B_seed3 in 0.7 min  peak_h_err_pct=-5.547  nan=False
+START 29/40 case1_A_seed4
+FINISHED case1_A_seed4 in 1.5 min  peak_h_err_pct=-5.757  nan=False
+START 30/40 case1_B_seed4
+FINISHED case1_B_seed4 in 0.7 min  peak_h_err_pct=-5.883  nan=False
+START 31/40 case1_A_seed5
+FINISHED case1_A_seed5 in 1.5 min  peak_h_err_pct=1.668  nan=False
+START 32/40 case1_B_seed5
+FINISHED case1_B_seed5 in 0.7 min  peak_h_err_pct=2.302  nan=False
+START 33/40 case1_A_seed6
+FINISHED case1_A_seed6 in 1.5 min  peak_h_err_pct=-0.414  nan=False
+START 34/40 case1_B_seed6
+FINISHED case1_B_seed6 in 0.7 min  peak_h_err_pct=-1.376  nan=False
+START 35/40 case1_A_seed7
+FINISHED case1_A_seed7 in 1.5 min  peak_h_err_pct=-0.362  nan=False
+START 36/40 case1_B_seed7
+FINISHED case1_B_seed7 in 0.7 min  peak_h_err_pct=-0.306  nan=False
+START 37/40 case1_A_seed8
+FINISHED case1_A_seed8 in 1.6 min  peak_h_err_pct=0.479  nan=False
+START 38/40 case1_B_seed8
+FINISHED case1_B_seed8 in 0.7 min  peak_h_err_pct=0.516  nan=False
+START 39/40 case1_A_seed9
+FINISHED case1_A_seed9 in 1.5 min  peak_h_err_pct=0.286  nan=False
+START 40/40 case1_B_seed9
+FINISHED case1_B_seed9 in 0.7 min  peak_h_err_pct=0.506  nan=False
+assembled 40 runs into results/
+EXIT:0

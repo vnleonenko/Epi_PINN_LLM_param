@@ -1,0 +1,283 @@
+{
+  "completed": {
+    "case2_A_seed0": {
+      "train_seconds": 95.12885075600002,
+      "finished_utc": "2026-11-08T01:35:22Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -0.15811312090266333
+    },
+    "case2_B_seed0": {
+      "train_seconds": 42.924277531999905,
+      "finished_utc": "2026-11-08T01:36:15Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -0.1257984192486453
+    },
+    "case2_A_seed1": {
+      "train_seconds": 89.63067045600008,
+      "finished_utc": "2026-11-08T01:37:52Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.6006929803265298
+    },
+    "case2_B_seed1": {
+      "train_seconds": 40.99453940700005,
+      "finished_utc": "2026-11-08T01:38:40Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.5982676840598342
+    },
+    "case2_A_seed2": {
+      "train_seconds": 89.54475327,
+      "finished_utc": "2026-11-08T01:40:17Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.5578370468541362
+    },
+    "case2_B_seed2": {
+      "train_seconds": 42.56899776,
+      "finished_utc": "2026-11-08T01:41:08Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.563798668962215
+    },
+    "case2_A_seed3": {
+      "train_seconds": 88.67310798699987,
+      "finished_utc": "2026-11-08T01:42:44Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.9765800288114754
+    },
+    "case2_B_seed3": {
+      "train_seconds": 43.251623464999966,
+      "finished_utc": "2026-11-08T01:43:34Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.2112635652574371
+    },
+    "case2_A_seed4": {
+      "train_seconds": 88.76747241999988,
+      "finished_utc": "2026-11-08T01:45:09Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -3.1967451348198495
+    },
+    "case2_B_seed4": {
+      "train_seconds": 42.36040266400005,
+      "finished_utc": "2026-11-08T01:45:58Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -3.9782324983420514
+    },
+    "case2_A_seed5": {
+      "train_seconds": 88.2452048419998,
+      "finished_utc": "2026-11-08T01:47:33Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -5.291970773845297
+    },
+    "case2_B_seed5": {
+      "train_seconds": 43.86106243799986,
+      "finished_utc": "2026-11-08T01:48:24Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -3.6111862644605637
+    },
+    "case2_A_seed6": {
+      "train_seconds": 90.08180934199981,
+      "finished_utc": "2026-11-08T01:50:01Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -0.744716412625885
+    },
+    "case2_B_seed6": {
+      "train_seconds": 41.77228532799995,
+      "finished_utc": "2026-11-08T01:50:52Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -0.7081811535021703
+    },
+    "case2_A_seed7": {
+      "train_seconds": 91.56398290900006,
+      "finished_utc": "2026-11-08T01:52:30Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 3.119295407584233
+    },
+    "case2_B_seed7": {
+      "train_seconds": 44.04005681699982,
+      "finished_utc": "2026-11-08T01:53:20Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 3.1768589337800806
+    },
+    "case2_A_seed8": {
+      "train_seconds": 89.3697162100002,
+      "finished_utc": "2026-11-08T01:54:56Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.39702229048871057
+    },
+    "case2_B_seed8": {
+      "train_seconds": 42.139241896000385,
+      "finished_utc": "2026-11-08T01:55:45Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.5995142050460688
+    },
+    "case2_A_seed9": {
+      "train_seconds": 90.81185908999987,
+      "finished_utc": "2026-11-08T01:57:24Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -0.013266027388080625
+    },
+    "case2_B_seed9": {
+      "train_seconds": 42.640886563000095,
+      "finished_utc": "2026-11-08T01:58:13Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -0.04421904035604884
+    },
+    "case1_A_seed0": {
+      "train_seconds": 92.24218360299983,
+      "finished_utc": "2026-11-08T01:59:53Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.12786797363992689
+    },
+    "case1_B_seed0": {
+      "train_seconds": 41.17391950499996,
+      "finished_utc": "2026-11-08T02:00:41Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.35420269966169743
+    },
+    "case1_A_seed1": {
+      "train_seconds": 88.333383185,
+      "finished_utc": "2026-11-08T02:02:18Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.014761225178056569
+    },
+    "case1_B_seed1": {
+      "train_seconds": 42.243604273000074,
+      "finished_utc": "2026-11-08T02:03:08Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.045394885718681846
+    },
+    "case1_A_seed2": {
+      "train_seconds": 86.0455967490002,
+      "finished_utc": "2026-11-08T02:04:42Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -0.2564655683756988
+    },
+    "case1_B_seed2": {
+      "train_seconds": 40.615050083999904,
+      "finished_utc": "2026-11-08T02:05:29Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -0.42271728835081823
+    },
+    "case1_A_seed3": {
+      "train_seconds": 86.66394982999964,
+      "finished_utc": "2026-11-08T02:07:04Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -4.179532433774678
+    },
+    "case1_B_seed3": {
+      "train_seconds": 41.95068280400028,
+      "finished_utc": "2026-11-08T02:07:52Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -5.546996659551632
+    },
+    "case1_A_seed4": {
+      "train_seconds": 87.95596068999976,
+      "finished_utc": "2026-11-08T02:09:27Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -5.757478349677188
+    },
+    "case1_B_seed4": {
+      "train_seconds": 43.14323701600006,
+      "finished_utc": "2026-11-08T02:10:19Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -5.88254015226785
+    },
+    "case1_A_seed5": {
+      "train_seconds": 88.35671996099973,
+      "finished_utc": "2026-11-08T02:11:55Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 1.6682794957293416
+    },
+    "case1_B_seed5": {
+      "train_seconds": 43.63911783899994,
+      "finished_utc": "2026-11-08T02:12:47Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 2.3018693886096164
+    },
+    "case1_A_seed6": {
+      "train_seconds": 90.64915519600027,
+      "finished_utc": "2026-11-08T02:14:25Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -0.41402609455359973
+    },
+    "case1_B_seed6": {
+      "train_seconds": 43.37895376100005,
+      "finished_utc": "2026-11-08T02:15:16Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -1.3763799759756539
+    },
+    "case1_A_seed7": {
+      "train_seconds": 92.79457383499994,
+      "finished_utc": "2026-11-08T02:16:56Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -0.36165512420469514
+    },
+    "case1_B_seed7": {
+      "train_seconds": 43.95737968900039,
+      "finished_utc": "2026-11-08T02:17:48Z",
+      "nan_flag": false,
+      "peak_h_err_pct": -0.30569390749105974
+    },
+    "case1_A_seed8": {
+      "train_seconds": 93.99518165999962,
+      "finished_utc": "2026-11-08T02:19:29Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.47925517693712666
+    },
+    "case1_B_seed8": {
+      "train_seconds": 43.06402248099994,
+      "finished_utc": "2026-11-08T02:20:20Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.5155213278785244
+    },
+    "case1_A_seed9": {
+      "train_seconds": 91.16249224800004,
+      "finished_utc": "2026-11-08T02:21:59Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.2855590542310908
+    },
+    "case1_B_seed9": {
+      "train_seconds": 43.45067321700026,
+      "finished_utc": "2026-11-08T02:22:50Z",
+      "nan_flag": false,
+      "peak_h_err_pct": 0.5058416506666008
+    }
+  },
+  "checks": null,
+  "s1": {
+    "pass": true,
+    "peak_h_err_pct": -0.15811312090266333,
+    "peak_day_err": -2.0020020020020013,
+    "published_interval_pct": [
+      0.2,
+      3.1
+    ],
+    "stop_outside": [
+      -1.5,
+      6.0
+    ],
+    "nan_flag": false,
+    "note": "Seed 0 is not a seed from Appendix E.3. The check asks only that the dropout-off peak-height error sit near +0.2% to +3.1%."
+  },
+  "started": "2026-11-08T01:33:18Z",
+  "checks_pass": true,
+  "runtime": {
+    "device": "cpu",
+    "cuda": false,
+    "torch": "2.15.0+cpu",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "python": "3.12.3",
+    "torch_num_threads": 4,
+    "deterministic_algorithms": true,
+    "pinn_sha256": "e4161cfab53eca5e47f5be7790ea47e4891bb1f08e429b846e0f667d96d59c64",
+    "snapshot_pinn_sha256": "e4161cfab53eca5e47f5be7790ea47e4891bb1f08e429b846e0f667d96d59c64",
+    "surrogate_sha256": "1bd03d437c9f7cb51a43085071632f3c0819858fef719991ead172fbfa8ebc9f",
+    "snapshot_surrogate_sha256": "1bd03d437c9f7cb51a43085071632f3c0819858fef719991ead172fbfa8ebc9f",
+    "pinn_matches_snapshot": true,
+    "surrogate_matches_snapshot": true
+  },
+  "running": {
+    "run_id": "case1_B_seed9",
+    "started_utc": "2026-11-08T02:22:03Z"
+  }
+}

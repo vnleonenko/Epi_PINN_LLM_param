@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "peak_h_err_pct": -0.15811312090266333,
+  "peak_day_err": -2.0020020020020013,
+  "published_interval_pct": [
+    0.2,
+    3.1
+  ],
+  "stop_outside": [
+    -1.5,
+    6.0
+  ],
+  "nan_flag": false,
+  "note": "Seed 0 is not a seed from Appendix E.3. The check asks only that the dropout-off peak-height error sit near +0.2% to +3.1%."
+}
