@@ -1,0 +1,3 @@
+id,level,group,gold,AK_label,AK_agree,VN_label,VN_agree,excluded,exclude_reason
+Q067,L5,single,peak_higher,peak_higher,1,none,0,1,disagree:VN
+Q107,N,none,none,growth_slower;peak_lower,0,none,1,1,disagree:AK

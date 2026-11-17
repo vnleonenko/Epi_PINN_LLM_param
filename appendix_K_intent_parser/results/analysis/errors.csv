@@ -1,0 +1,641 @@
+id,group,level,gold,pred_majority,maj_status,error_type,error_flags,repeat_codes,keyword_rule,raw_repeat_1,raw_repeat_2,raw_repeat_3
+Q015,single,L4,peak_higher,growth_faster;peak_higher,unanimous,extra_target,extra_target,growth_faster;peak_higher | growth_faster;peak_higher | growth_faster;peak_higher,peak_higher,"```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""higher"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""height"",
+  ""reasoning"": ""Reopening schools and increased contacts increase transmission ($\beta$), leading to a faster growth rate and consequently a higher peak number of infected individuals.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""higher"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""height"",
+  ""reasoning"": ""Reopening schools and increased contacts increase transmission ($\beta$), leading to a faster growth rate and consequently a higher peak number of infected individuals.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""higher"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""height"",
+  ""reasoning"": ""Reopening schools and increased contacts increase transmission ($\beta$), leading to a faster growth rate and consequently a higher peak number of infected individuals.""
+}
+```"
+Q025,single,L4,peak_lower,peak_later;peak_lower,unanimous,extra_target,extra_target,peak_later;peak_lower | peak_later;peak_lower | peak_later;peak_lower,peak_lower,"```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""later"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""lower"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""Mask mandates and remote work reduce transmission, which causally delays the epidemic peak (later) and reduces its maximum size (lower).""
+}
+```","```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""later"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""lower"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""Mask mandates and remote work reduce transmission, which causally delays the epidemic peak (later) and reduces its maximum size (lower).""
+}
+```","```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""later"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""lower"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""Mask mandates and remote work reduce transmission, which causally delays the epidemic peak (later) and reduces its maximum size (lower).""
+}
+```"
+Q030,single,L2,peak_earlier,growth_faster;peak_earlier,unanimous,extra_target,extra_target,growth_faster;peak_earlier | growth_faster;peak_earlier | growth_faster;peak_earlier,peak_earlier,"```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""earlier"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""The comment attributes the earlier arrival of the peak to the new variant's rapid spread, indicating a faster initial growth rate.""
+}
+```","```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""earlier"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""The comment attributes the earlier arrival of the peak to the new variant's rapid spread, indicating a faster initial growth rate.""
+}
+```","```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""earlier"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""The comment attributes the earlier arrival of the peak to the new variant's rapid spread, indicating a faster initial growth rate.""
+}
+```"
+Q039,single,L1,peak_later,none,unanimous,missing_target,missing_target,none | none | none,peak_later,"```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""position"",
+  ""reasoning"": ""The expert is critiquing the timing of the current forecast peak, stating it occurs too early. This indicates a concern about the epidemic's temporal progression.""
+}
+```","```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""position"",
+  ""reasoning"": ""The expert is critiquing the timing of the current forecast peak, stating it occurs too early. This indicates a concern about the epidemic's temporal progression.""
+}
+```","```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""position"",
+  ""reasoning"": ""The expert is critiquing the timing of the current forecast peak, stating it occurs too early. This indicates a concern about the epidemic's temporal progression.""
+}
+```"
+Q055,single,L4,growth_faster,growth_faster;peak_earlier;peak_higher,unanimous,extra_target,extra_target,growth_faster;peak_earlier;peak_higher | growth_faster;peak_earlier;peak_higher | growth_faster;peak_earlier;peak_higher,growth_faster,"```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""earlier"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""higher"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""Speeding up the initial spread increases the growth rate, causing the epidemic to reach its peak sooner and at a higher magnitude.""
+}
+```","```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""earlier"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""higher"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""Speeding up the initial spread increases the growth rate, causing the epidemic to reach its peak sooner and at a higher magnitude.""
+}
+```","```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""earlier"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""higher"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""Speeding up the initial spread increases the growth rate, causing the epidemic to reach its peak sooner and at a higher magnitude.""
+}
+```"
+Q066,single,L4,mortality_higher,none,unanimous,missing_target,missing_target,none | none | none,mortality_higher,"```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": true,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""mortality"",
+  ""reasoning"": ""The comment addresses the Case Fatality Rate (CFR), which is a measure of mortality and does not directly comment on the epidemic's peak timing or size.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": true,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""mortality"",
+  ""reasoning"": ""The comment addresses the Case Fatality Rate (CFR), which is a measure of mortality and does not directly comment on the epidemic's peak timing or size.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": true,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""mortality"",
+  ""reasoning"": ""The comment addresses the Case Fatality Rate (CFR), which is a measure of mortality and does not directly comment on the epidemic's peak timing or size.""
+}
+```"
+Q068,single,L5,peak_higher,parse_error,unanimous,parse_error,parse_error,parse_error | parse_error | parse_error,none,"```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment is a quantitative observation regarding the current model's peak size relative to resource capacity (ambulance service), not a prediction of how an intervention would causally shift the epidemic curve.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment is a quantitative observation regarding the current model's peak size relative to resource capacity (ambulance service), not a prediction of how an intervention would causally shift the epidemic curve.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment is a quantitative observation regarding the current model's peak size relative to resource capacity (ambulance service), not a prediction of how an intervention would causally shift the epidemic curve.""
+}
+```"
+Q069,single,L5,peak_lower,none,unanimous,missing_target,missing_target,none | none | none,none,"```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""The comment describes the current strain on the healthcare system relative to the forecast peak load, but it does not suggest how interventions would shift or change the epidemic curve itself.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""The comment describes the current strain on the healthcare system relative to the forecast peak load, but it does not suggest how interventions would shift or change the epidemic curve itself.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""The comment describes the current strain on the healthcare system relative to the forecast peak load, but it does not suggest how interventions would shift or change the epidemic curve itself.""
+}
+```"
+Q072,single,L5,peak_earlier,parse_error,unanimous,parse_error,parse_error,parse_error | parse_error | parse_error,none,"```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment describes the current state of the epidemic (it is already declining by the forecast date) rather than predicting how a future intervention should change the peak trajectory.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment describes the current state of the epidemic (it is already declining by the forecast date) rather than predicting how a future intervention should change the peak trajectory.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment describes the current state of the epidemic (it is already declining by the forecast date) rather than predicting how a future intervention should change the peak trajectory.""
+}
+```"
+Q076,single,L5,growth_faster,growth_faster;peak_earlier;peak_higher,unanimous,extra_target,extra_target,growth_faster;peak_earlier;peak_higher | growth_faster;peak_earlier;peak_higher | growth_faster;peak_earlier;peak_higher,none,"```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""earlier"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""higher"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""The comment indicates a higher effective reproduction number than modeled, implying much faster initial growth. This rapid acceleration leads to an earlier and higher peak.""
+}
+```","```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""earlier"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""higher"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""The comment indicates a higher effective reproduction number than modeled, implying much faster initial growth. This rapid acceleration leads to an earlier and higher peak.""
+}
+```","```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""earlier"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""higher"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""The comment indicates a higher effective reproduction number than modeled, implying much faster initial growth. This rapid acceleration leads to an earlier and higher peak.""
+}
+```"
+Q078,single,L5,mortality_higher,none,unanimous,missing_target,missing_target,none | none | none,none,"```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": true,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""mortality"",
+  ""reasoning"": ""The expert is critiquing the mismatch between the model's assumed fatality rate (based on a young population) and the reality of an older population, which affects mortality modeling.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": true,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""mortality"",
+  ""reasoning"": ""The expert is critiquing the mismatch between the model's assumed fatality rate (based on a young population) and the reality of an older population, which affects mortality modeling.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": true,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""mortality"",
+  ""reasoning"": ""The expert is critiquing the mismatch between the model's assumed fatality rate (based on a young population) and the reality of an older population, which affects mortality modeling.""
+}
+```"
+Q093,compound,C,growth_faster;mortality_higher,growth_faster;mortality_higher;peak_earlier;peak_higher,unanimous,extra_target,extra_target,growth_faster;mortality_higher;peak_earlier;peak_higher | growth_faster;mortality_higher;peak_earlier;peak_higher | growth_faster;mortality_higher;peak_earlier;peak_higher,growth_faster;mortality_higher,"```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""earlier"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""higher"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": true,
+  ""mortality_direction"": ""higher"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""Faster initial growth drives a quicker rise to the peak (earlier position), and the combination of rapid transmission and high fatality rate leads to a higher, more severe epidemic curve.""
+}
+```","```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""earlier"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""higher"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": true,
+  ""mortality_direction"": ""higher"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""Faster initial growth drives a quicker rise to the peak (earlier position), and the combination of rapid transmission and high fatality rate leads to a higher, more severe epidemic curve.""
+}
+```","```json
+{
+  ""cares_about_position"": true,
+  ""position_direction"": ""earlier"",
+  ""cares_about_height"": true,
+  ""height_direction"": ""higher"",
+  ""cares_about_growth"": true,
+  ""growth_direction"": ""faster"",
+  ""cares_about_mortality"": true,
+  ""mortality_direction"": ""higher"",
+  ""primary_metric"": ""both"",
+  ""reasoning"": ""Faster initial growth drives a quicker rise to the peak (earlier position), and the combination of rapid transmission and high fatality rate leads to a higher, more severe epidemic curve.""
+}
+```"
+Q100,none,N,none,parse_error,unanimous,parse_error,parse_error,parse_error | parse_error | parse_error,none,"```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""any"",
+  ""reasoning"": ""The comment is a validation of an existing forecast and does not introduce any new information or suggest changes to the epidemic trajectory.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""any"",
+  ""reasoning"": ""The comment is a validation of an existing forecast and does not introduce any new information or suggest changes to the epidemic trajectory.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""any"",
+  ""reasoning"": ""The comment is a validation of an existing forecast and does not introduce any new information or suggest changes to the epidemic trajectory.""
+}
+```"
+Q102,none,N,none,parse_error,unanimous,parse_error,parse_error,parse_error | parse_error | parse_error,none,"```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment is a procedural question regarding the modeling inputs and does not describe any change in epidemic dynamics or interventions.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment is a procedural question regarding the modeling inputs and does not describe any change in epidemic dynamics or interventions.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment is a procedural question regarding the modeling inputs and does not describe any change in epidemic dynamics or interventions.""
+}
+```"
+Q105,none,N,none,parse_error,unanimous,parse_error,parse_error,parse_error | parse_error | parse_error,none,"```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment requests a methodological addition (uncertainty band) to the visualization, but it does not suggest any change in the underlying transmission dynamics or epidemic parameters that would shift the predicted peak.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment requests a methodological addition (uncertainty band) to the visualization, but it does not suggest any change in the underlying transmission dynamics or epidemic parameters that would shift the predicted peak.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment requests a methodological addition (uncertainty band) to the visualization, but it does not suggest any change in the underlying transmission dynamics or epidemic parameters that would shift the predicted peak.""
+}
+```"
+Q106,none,N,none,parse_error,unanimous,parse_error,parse_error,parse_error | parse_error | parse_error,none,"```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment provides a historical data point about when the previous wave peaked and does not suggest any causal relationship or intervention regarding how a future peak should change.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment provides a historical data point about when the previous wave peaked and does not suggest any causal relationship or intervention regarding how a future peak should change.""
+}
+```","```json
+{
+  ""cares_about_position"": false,
+  ""position_direction"": ""any"",
+  ""cares_about_height"": false,
+  ""height_direction"": ""any"",
+  ""cares_about_growth"": false,
+  ""growth_direction"": ""any"",
+  ""cares_about_mortality"": false,
+  ""mortality_direction"": ""any"",
+  ""primary_metric"": ""none"",
+  ""reasoning"": ""The comment provides a historical data point about when the previous wave peaked and does not suggest any causal relationship or intervention regarding how a future peak should change.""
+}
+```"

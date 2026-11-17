@@ -1,0 +1,34 @@
+id,text,my_label,comment
+Q067,"At the forecast maximum we would still have free beds, but I am sure the wards will overflow.",peak_higher,"Прогноз: на пике свободные койки; эксперт: переполнение, значит, реальный пик выше"
+Q068,The model's top is about half of what the ambulance service expects to handle.,peak_higher,"Максимум модели вдвое ниже ожиданий скорой, значит, реальный пик выше"
+Q069,The ambulance service expects to handle about half of the forecast's top load.,peak_lower,"Скорая ждёт половину прогнозной пиковой нагрузки, значит, реальный пик ниже"
+Q070,At the forecast maximum we would need twice the beds we will actually need.,peak_lower,"По прогнозу на пике нужно вдвое больше коек, чем понадобится, значит, реальный пик ниже"
+Q071,"The model has the wave culminating in February, but I would bet on mid-January.",peak_earlier,"Прогноз: февраль; эксперт: середина января, значит, пик раньше"
+Q072,"By the forecast date of the peak, the wave will already be declining.",peak_earlier,"К прогнозной дате пика волна уже спадает, значит, реальный пик раньше"
+Q073,"The model has the wave culminating in mid-January, but I would bet on February.",peak_later,"Прогноз: середина января; эксперт: февраль, значит, пик позже"
+Q074,"On the forecast date of the peak, cases will still be climbing.",peak_later,"На прогнозную дату пика случаи ещё растут, значит, реальный пик позже"
+Q075,"In the first weeks cases have been doubling every five days, not every ten as in the model.",growth_faster,"Удвоение за 5 дней вместо 10 в модели, значит, начальный рост быстрее"
+Q076,"Early on, each case infects many more people than the model's slow start implies.",growth_faster,"В начале каждый случай заражает больше, чем в модели, значит, начальный рост быстрее"
+Q077,In the model one in eleven patients dies; in our hospitals it is closer to one in seven.,mortality_higher,"Модель: 1 из 11; у нас: 1 из 7, значит, смертность выше (пример из инструкции)"
+Q078,"The model's fatality figure fits a young population, and ours is much older.",mortality_higher,"Результат не назван, только причина: модель рассчитана на молодое население, наше старше. Метка достроена (старше, значит, смертность выше), но следствие единственное и тема (fatality figure) названа прямо"
+Q091,The peak will be both higher and earlier than forecast.,peak_earlier;peak_higher,Обе цели сказаны прямо
+Q092,I expect a lower peak that arrives later.,peak_later;peak_lower,Обе цели сказаны прямо
+Q093,Faster growth at the start and a higher fatality rate.,growth_faster;mortality_higher,Обе цели сказаны прямо
+Q094,The wave will be bigger and the maximum will come sooner.,peak_earlier;peak_higher,"""Maximum will come sooner"" = пик раньше. ""Bigger"" двусмысленно (высота пика или общий размер волны); прочитано как пик выше, как поймёт разумный читатель в доменной области"
+Q095,"Fewer cases at the top, and the top comes later.",peak_later;peak_lower,"""Fewer cases at the top"" = пик ниже; ""top comes later"" = пик позже"
+Q096,"Mortality is underestimated, and the peak should be higher.",mortality_higher;peak_higher,"""Mortality is underestimated"" = смертность выше; пик выше сказано прямо"
+Q097,"The early rise should be steeper, so the peak will come earlier.",growth_faster;peak_earlier,"Оба результата названы экспертом. ""Steeper early rise"" = рост быстрее; пик раньше подан как следствие (""so""), но сказан явно, цепочка не достраивалась"
+Q098,"Lower peak, but the same timing.",peak_lower,"""Same timing"" не цель (правило: просьба оставить как есть не является целью)"
+Q099,"The peak will come later, at about the same height.",peak_later,"""About the same height"" не цель (то же правило)"
+Q100,The forecast looks reasonable to me.,none,"Согласие, изменений не просит"
+Q101,"Thank you, this is helpful.",none,Благодарность
+Q102,What data were used for the calibration?,none,"Вопрос о данных, не просьба об изменении"
+Q103,I agree with the predicted peak.,none,Согласие с пиком
+Q104,"The peak timing seems right, and so does the height.",none,Согласие со сроком и высотой пика
+Q105,Please show the uncertainty band as well.,none,"Просьба об отображении, прогноз менять не просит"
+Q106,Last year the wave peaked in late January.,none,"Факт о прошлом сезоне, прямой просьбы нет. Тема: время пика, но выбрать между peak_earlier и peak_later можно только по дате пика в текущем прогнозе; в изолированном прогоне парсера её нет, направление решается только в полном контуре"
+Q107,The model should account for vaccination.,growth_slower;peak_lower,"Названа причина (вакцинация), а не результат. Метка достроена: передача меньше, значит, рост медленнее и пик ниже. Сам эксперт результат не назвал; возможен и none"
+Q108,The initial growth should be slower.,growth_slower,Сказано прямо
+Q109,Mortality should be lower.,mortality_lower,Сказано прямо
+Q110,The early rise will be less steep than shown.,growth_slower,"""Less steep early rise"" = начальный рост медленнее"
+Q111,Fewer infected people will die than the model assumes.,mortality_lower,"Доля умерших ниже, чем в модели"

@@ -1,0 +1,9 @@
+gold \ pred,peak_higher,peak_lower,peak_earlier,peak_later,growth_faster,mortality_higher,none,other
+peak_higher,12,0,0,0,0,0,0,2
+peak_lower,0,13,0,0,0,0,1,1
+peak_earlier,0,0,13,0,0,0,0,2
+peak_later,0,0,0,14,0,0,1,0
+growth_faster,0,0,0,0,13,0,0,2
+mortality_higher,0,0,0,0,0,13,2,0
+none,0,0,0,0,0,0,0,0
+other,0,0,0,0,0,0,0,0

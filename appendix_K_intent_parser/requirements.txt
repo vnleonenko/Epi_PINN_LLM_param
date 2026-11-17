@@ -1,0 +1,7 @@
+# Analysis, reproduce.py, selftest.py and --mock need only pydantic.
+pydantic>=2
+# The real LM Studio run uses these when installed (the reported run had
+# openai 2.48.0 and langchain-core 0.3.86); without them it falls back to
+# urllib and to the JSON extractor in bundled_parser.py.
+openai>=1
+langchain-core>=0.3

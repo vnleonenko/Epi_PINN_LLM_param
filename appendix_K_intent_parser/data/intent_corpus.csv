@@ -1,0 +1,112 @@
+id,group,level,lang,text,gold,note
+Q001,single,L0,en,Peak should be higher,peak_higher,original template
+Q002,single,L0,en,Peak should be lower,peak_lower,original template
+Q003,single,L0,en,Peak should be earlier,peak_earlier,original template
+Q004,single,L0,en,Peak should be later,peak_later,original template
+Q005,single,L0,en,faster initial growth,growth_faster,original template
+Q006,single,L0,en,higher mortality,mortality_higher,original template
+Q007,single,L1,en,The peak will be higher than the model shows.,peak_higher,
+Q008,single,L1,en,I expect more active cases at the top of the wave.,peak_higher,
+Q009,single,L1,en,The forecast underestimates the maximum number of cases.,peak_higher,
+Q010,single,L2,en,"Given the low vaccination coverage, I think the wave will reach a much larger maximum.",peak_higher,
+Q011,single,L2,en,Hospitals should prepare for more patients at the height of this wave than the forecast suggests.,peak_higher,
+Q012,single,L2,en,The predicted maximum looks too modest to me.,peak_higher,
+Q013,single,L3,en,I don't believe the peak will be as low as this.,peak_higher,
+Q014,single,L3,en,"Compared with last autumn's wave, this peak looks too small; it should go up.",peak_higher,
+Q015,single,L4,en,"Schools reopen next week and contacts will increase, so I expect the peak number of infected people to exceed the forecast.",peak_higher,
+Q016,single,L4,en,Peak too low.,peak_higher,
+Q017,single,L1,en,The peak will be lower than predicted.,peak_lower,
+Q018,single,L1,en,I expect fewer active cases at the top of the wave.,peak_lower,
+Q019,single,L1,en,The forecast overestimates the maximum number of cases.,peak_lower,
+Q020,single,L2,en,"With the new restrictions in place, the wave will not reach such a large maximum.",peak_lower,
+Q021,single,L2,en,The predicted maximum seems inflated; hospitals will not see that many patients at once.,peak_lower,
+Q022,single,L2,en,"Many people were infected in the previous wave, so the maximum should be smaller than shown.",peak_lower,
+Q023,single,L3,en,I don't think the peak will be as high as this.,peak_lower,
+Q024,single,L3,en,The height of the curve should come down.,peak_lower,
+Q025,single,L4,en,"Given mask mandates and remote work, I would cut the peak.",peak_lower,
+Q026,single,L4,en,Peak too high.,peak_lower,
+Q027,single,L1,en,The peak will come earlier than the model predicts.,peak_earlier,
+Q028,single,L1,en,I expect the maximum to be reached sooner.,peak_earlier,
+Q029,single,L1,en,The forecast places the peak too late.,peak_earlier,
+Q030,single,L2,en,"The new variant spreads quickly, so the top of the wave will arrive ahead of the forecast date.",peak_earlier,
+Q031,single,L2,en,We will hit the maximum well before the date shown.,peak_earlier,
+Q032,single,L2,en,The wave should culminate several weeks before the predicted date.,peak_earlier,
+Q033,single,L3,en,I don't think we will have to wait that long for the peak.,peak_earlier,
+Q034,single,L3,en,Bring the peak forward; it will happen sooner.,peak_earlier,
+Q035,single,L4,en,"Judging by the last two weeks, the turning point is closer than the model says.",peak_earlier,
+Q036,single,L4,en,Peak too late.,peak_earlier,
+Q037,single,L1,en,The peak will come later than the model predicts.,peak_later,
+Q038,single,L1,en,I expect the maximum to be reached later.,peak_later,
+Q039,single,L1,en,The forecast places the peak too early.,peak_later,
+Q040,single,L2,en,"Because of the school holidays, the top of the wave will be delayed.",peak_later,
+Q041,single,L2,en,We will not reach the maximum by the date shown; it will take longer.,peak_later,
+Q042,single,L2,en,The wave should culminate a few weeks after the predicted date.,peak_later,
+Q043,single,L3,en,I think the peak is further away than the model suggests.,peak_later,
+Q044,single,L3,en,Push the peak back in time.,peak_later,
+Q045,single,L4,en,"The turning point will come later than forecast, probably not before the end of the month.",peak_later,
+Q046,single,L4,en,Peak too early.,peak_later,
+Q047,single,L1,en,The initial growth should be faster.,growth_faster,
+Q048,single,L1,en,Cases will rise more quickly at the start than the model shows.,growth_faster,
+Q049,single,L1,en,The forecast underestimates the early growth rate.,growth_faster,
+Q050,single,L2,en,The doubling time at the beginning should be shorter.,growth_faster,
+Q051,single,L2,en,"The new variant is more transmissible, so the early increase will be steeper.",growth_faster,
+Q052,single,L2,en,The curve starts off too flat.,growth_faster,
+Q053,single,L3,en,I don't believe the early rise will be this slow.,growth_faster,
+Q054,single,L3,en,In the first weeks the number of infected people should grow faster than shown.,growth_faster,
+Q055,single,L4,en,Speed up the initial spread.,growth_faster,
+Q056,single,L4,en,Growth too slow at the start.,growth_faster,
+Q057,single,L1,en,Mortality should be higher.,mortality_higher,
+Q058,single,L1,en,A larger proportion of infected people will die than the model assumes.,mortality_higher,
+Q059,single,L1,en,The case fatality rate is underestimated.,mortality_higher,
+Q060,single,L2,en,"Given the age structure of the population, the fatality rate should be higher.",mortality_higher,
+Q061,single,L2,en,Increase the share of fatal outcomes.,mortality_higher,
+Q062,single,L2,en,The model is too optimistic about deaths among the infected.,mortality_higher,
+Q063,single,L3,en,I don't believe the fatality rate will be this low.,mortality_higher,
+Q064,single,L3,en,"Hospitals are overloaded, so a larger fraction of patients will die.",mortality_higher,
+Q065,single,L4,en,More deaths per infection.,mortality_higher,
+Q066,single,L4,en,CFR too low.,mortality_higher,
+Q067,single,L5,en,"At the forecast maximum we would still have free beds, but I am sure the wards will overflow.",peak_higher,implicit: direction must be inferred; gold to be confirmed by two epidemiologists
+Q068,single,L5,en,The model's top is about half of what the ambulance service expects to handle.,peak_higher,implicit: direction must be inferred; gold to be confirmed by two epidemiologists
+Q069,single,L5,en,The ambulance service expects to handle about half of the forecast's top load.,peak_lower,implicit: direction must be inferred; gold to be confirmed by two epidemiologists
+Q070,single,L5,en,At the forecast maximum we would need twice the beds we will actually need.,peak_lower,implicit: direction must be inferred; gold to be confirmed by two epidemiologists
+Q071,single,L5,en,"The model has the wave culminating in February, but I would bet on mid-January.",peak_earlier,implicit: direction must be inferred; gold to be confirmed by two epidemiologists
+Q072,single,L5,en,"By the forecast date of the peak, the wave will already be declining.",peak_earlier,implicit: direction must be inferred; gold to be confirmed by two epidemiologists
+Q073,single,L5,en,"The model has the wave culminating in mid-January, but I would bet on February.",peak_later,implicit: direction must be inferred; gold to be confirmed by two epidemiologists
+Q074,single,L5,en,"On the forecast date of the peak, cases will still be climbing.",peak_later,implicit: direction must be inferred; gold to be confirmed by two epidemiologists
+Q075,single,L5,en,"In the first weeks cases have been doubling every five days, not every ten as in the model.",growth_faster,implicit: direction must be inferred; gold to be confirmed by two epidemiologists
+Q076,single,L5,en,"Early on, each case infects many more people than the model's slow start implies.",growth_faster,implicit: direction must be inferred; gold to be confirmed by two epidemiologists
+Q077,single,L5,en,In the model one in eleven patients dies; in our hospitals it is closer to one in seven.,mortality_higher,implicit: direction must be inferred; gold to be confirmed by two epidemiologists
+Q078,single,L5,en,"The model's fatality figure fits a young population, and ours is much older.",mortality_higher,implicit: direction must be inferred; gold to be confirmed by two epidemiologists
+Q079,single,RU,ru,Пик должен быть выше.,peak_higher,optional secondary analysis
+Q080,single,RU,ru,"Думаю, на пике больных будет больше, чем показывает прогноз.",peak_higher,optional secondary analysis
+Q081,single,RU,ru,Пик будет ниже.,peak_lower,optional secondary analysis
+Q082,single,RU,ru,"Максимум заболевших, по-моему, завышен.",peak_lower,optional secondary analysis
+Q083,single,RU,ru,Пик наступит раньше.,peak_earlier,optional secondary analysis
+Q084,single,RU,ru,Максимум будет достигнут раньше прогнозной даты.,peak_earlier,optional secondary analysis
+Q085,single,RU,ru,Пик сместится на более поздний срок.,peak_later,optional secondary analysis
+Q086,single,RU,ru,"До пика ещё дальше, чем считает модель.",peak_later,optional secondary analysis
+Q087,single,RU,ru,Начальный рост должен быть быстрее.,growth_faster,optional secondary analysis
+Q088,single,RU,ru,В первые недели число случаев будет расти круче.,growth_faster,optional secondary analysis
+Q089,single,RU,ru,Летальность должна быть выше.,mortality_higher,optional secondary analysis
+Q090,single,RU,ru,Доля умерших среди заболевших занижена.,mortality_higher,optional secondary analysis
+Q091,compound,C,en,The peak will be both higher and earlier than forecast.,peak_higher;peak_earlier,
+Q092,compound,C,en,I expect a lower peak that arrives later.,peak_lower;peak_later,
+Q093,compound,C,en,Faster growth at the start and a higher fatality rate.,growth_faster;mortality_higher,
+Q094,compound,C,en,The wave will be bigger and the maximum will come sooner.,peak_higher;peak_earlier,
+Q095,compound,C,en,"Fewer cases at the top, and the top comes later.",peak_lower;peak_later,
+Q096,compound,C,en,"Mortality is underestimated, and the peak should be higher.",mortality_higher;peak_higher,
+Q097,compound,C,en,"The early rise should be steeper, so the peak will come earlier.",growth_faster;peak_earlier,causal link stated; both quantities named
+Q098,hold,H,en,"Lower peak, but the same timing.",peak_lower,explicit hold of peak day; adding a timing intent is an error
+Q099,hold,H,en,"The peak will come later, at about the same height.",peak_later,explicit hold of peak height; adding a height intent is an error
+Q100,none,N,en,The forecast looks reasonable to me.,none,
+Q101,none,N,en,"Thank you, this is helpful.",none,
+Q102,none,N,en,What data were used for the calibration?,none,"question, not a request"
+Q103,none,N,en,I agree with the predicted peak.,none,
+Q104,none,N,en,"The peak timing seems right, and so does the height.",none,
+Q105,none,N,en,Please show the uncertainty band as well.,none,out-of-scope request (display)
+Q106,none,N,en,Last year the wave peaked in late January.,none,"context only, no direction relative to the forecast"
+Q107,none,N,en,The model should account for vaccination.,none,"structural request, not a parameter direction"
+Q108,out_of_set,O,en,The initial growth should be slower.,growth_slower,"direction not among the six tested; correct = this direction or ""unsupported""; opposite direction = critical error"
+Q109,out_of_set,O,en,Mortality should be lower.,mortality_lower,"direction not among the six tested; correct = this direction or ""unsupported""; opposite direction = critical error"
+Q110,out_of_set,O,en,The early rise will be less steep than shown.,growth_slower,"direction not among the six tested; correct = this direction or ""unsupported""; opposite direction = critical error"
+Q111,out_of_set,O,en,Fewer infected people will die than the model assumes.,mortality_lower,"direction not among the six tested; correct = this direction or ""unsupported""; opposite direction = critical error"
