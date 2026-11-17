@@ -1,0 +1,21 @@
+{
+  "observed": {
+    "left_S_frac_368_registered": 0.07715716666666672,
+    "R_368": 444328.0,
+    "D_368": 15880.0,
+    "peak_I": 104932.0,
+    "peak_day_I": 199,
+    "g_early": 0.012478914084144548,
+    "g_accel": 0.02890351895987977,
+    "delta_I_110_150": 36064.0
+  },
+  "elapsed_seconds": 2021.1868666999944,
+  "n_starts": 64,
+  "seed_base": 20261117,
+  "workers": 7,
+  "python": "3.13.5",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "n_polished": 5,
+  "data_sha256": "bde98003e5fd10331bcd0adf2a2f7c8ccb75398b34296de47355b54b060f3aab"
+}
